@@ -12,7 +12,6 @@ cryptg
 csvfaker
 DateTime
 fontTools
-pymongo
 python-dotenv
 emoji
 fonttools
