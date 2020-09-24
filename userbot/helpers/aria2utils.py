@@ -5,7 +5,7 @@ import aria2p
 from requests import get
 
 from .. import LOGS
-from ..uniborgConfig import Config
+from ..Config import Config
 
 TMP_DOWNLOAD_DIRECTORY = Config.TMP_DOWNLOAD_DIRECTORY
 
