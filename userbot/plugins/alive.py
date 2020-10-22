@@ -23,13 +23,13 @@ async def amireallyalive(alive):
     if alive.reply_to_msg_id:
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
-        cat_caption = f"**✮ MY BOT IS RUNNING SUCCESFULLY ✮**\n\n"
+        cat_caption = f"**✮ FUNCIONANDO NORMALMENTE ✮**\n\n"
         cat_caption += f"**✧ Database :** `{check_sgnirts}`\n"
-        cat_caption += f"**✧ Telethon version :** `{version.__version__}\n`"
-        cat_caption += f"**✧ Catuserbot Version :** `{catversion}`\n"
-        cat_caption += f"**✧ Python Version :** `{python_version()}\n`"
+        cat_caption += f"**✧ Versão do Teleton :** `{version.__version__}\n`"
+        cat_caption += f"**✧ Versão Catuserbot :** `{catversion}`\n"
+        cat_caption += f"**✧ Versão Python :** `{python_version()}\n`"
         cat_caption += f"**✧ Uptime :** `{uptime}\n`"
-        cat_caption += f"**✧ My Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
+        cat_caption += f"**✧ Dono:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
         await borg.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
@@ -37,13 +37,13 @@ async def amireallyalive(alive):
     else:
         await edit_or_reply(
             alive,
-            f"**✮ MY BOT IS RUNNING SUCCESFULLY ✮**\n\n"
+            f"**✮ FUNCIONANDO NORMALMENTE ✮**\n\n"
             f"**✧ Database :** `{check_sgnirts}`\n"
             f"**✧ Telethon Version :** `{version.__version__}\n`"
-            f"**✧ Catuserbot Version :** `{catversion}`\n"
-            f"**✧ Python Version :** `{python_version()}\n`"
+            f"**✧ Versão Catuserbot :** `{catversion}`\n"
+            f"**✧ Versão Python :** `{python_version()}\n`"
             f"**✧ Uptime :** `{uptime}\n`"
-            f"**✧ My Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
+            f"**✧ Dono:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
         )
 
 
@@ -57,11 +57,11 @@ async def amireallyalive(alive):
     if alive.reply_to_msg_id:
         reply_to_id = await alive.get_reply_message()
     hmm = bot.uid
-    cat_caption = f"**Catuserbot is Up and Running**\n"
-    cat_caption += f"**  -Telethon version :** `{version.__version__}\n`"
-    cat_caption += f"**  -Catuserbot Version :** `{catversion}`\n"
-    cat_caption += f"**  -Python Version :** `{python_version()}\n`"
-    cat_caption += f"**  -My peru Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
+    cat_caption = f"**FUNCIONANDO NORMALMENTE**\n"
+    cat_caption += f"**  -Versão do Teleton :** `{version.__version__}\n`"
+    cat_caption += f"**  -Versão Catuserbot :** `{catversion}`\n"
+    cat_caption += f"**  -Versão Python :** `{python_version()}\n`"
+    cat_caption += f"**  -Dono:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
     results = await bot.inline_query(tgbotusername, cat_caption)  # pylint:disable=E0602
     await results[0].click(alive.chat_id, reply_to=reply_to_id, hide_via=True)
     await alive.delete()
@@ -81,7 +81,7 @@ async def amireallyalive(alive):
 def check_data_base_heal_th():
     # https://stackoverflow.com/a/41961968
     is_database_working = False
-    output = "No Database is set"
+    output = "Nenhum banco de dados está definido"
     if not Var.DB_URI:
         return is_database_working, output
     from userbot.plugins.sql_helper import SESSION
@@ -93,7 +93,7 @@ def check_data_base_heal_th():
         output = f"❌ {str(e)}"
         is_database_working = False
     else:
-        output = "Functioning Normally"
+        output = "Funcionando normalmente"
         is_database_working = True
     return is_database_working, output
 
@@ -102,8 +102,8 @@ CMD_HELP.update(
     {
         "alive": "**Plugin :** `alive`\
       \n\n**Syntax : **`.alive` \
-      \n**Usage : ** status of bot.\
+      \n**Uso : ** status do bot.\
       \n\n**Syntax : **`.ialive` \
-      \n**Usage : ** inline alive."
+      \n**Uso : ** inline alive."
     }
 )

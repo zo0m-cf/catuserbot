@@ -376,12 +376,12 @@ CMD_HELP.update(
     {
         "tools": "**Plugin : **`tools`\
         \n\n**Syntax : **`.scan` reply to media or file\
-        \n**Usage : **it scans the media or file and checks either any virus is in the file or media\
+        \n**Uso : **it scans the media or file and checks either any virus is in the file or media\
         \n\n**Syntax : **`.makeqr` <content>\
-        \n**Usage : **Make a QR Code from the given content.\
+        \n**Uso : **Make a QR Code from the given content.\
         \nExample: .makeqr www.google.com\
         \n\n**Syntax : **`.barcode `<content>\
-        \n**Usage : **Make a BarCode from the given content.\
+        \n**Uso : **Make a BarCode from the given content.\
         \nExample: `.barcode` www.google.com\
         \n\n**Syntax : **`.decode` <reply to barcode/qrcode> \
         \n**USAGE : **to get decoded content of those codes.\
@@ -392,8 +392,8 @@ CMD_HELP.update(
         \n\n**Syntax : **`.ifsc` <IFSC code>\
         \n**USAGE : ** to get details of the relevant bank or branch **Example :** `.ifsc SBIN0016086`\
         \n\n**Syntax : **`.color` <color_code> \
-        \n**Usage : **sends you a plain image of the color example :`.color #ff0000`\
+        \n**Uso : **sends you a plain image of the color example :`.color #ff0000`\
         \n\n**Syntax : **`.xkcd` <query>\
-        \n**Usage : **Searches for the query for the relevant XKCD comic "
+        \n**Uso : **Searches for the query for the relevant XKCD comic "
     }
 )

@@ -176,13 +176,13 @@ async def stylish_generator(event):
 CMD_HELP.update(
     {
         "funnyfonts": ".cp (text) or .cp reply to message \
-\nUsage: inserts some emojis in between the texts\
+\nUso: inserts some emojis in between the texts\
 \n\n.str (text) or .str reply to message \
-\nUsage: Stretchs the given message.\
+\nUso: Stretchs the given message.\
 \n\n.zal (text) or .zal reply to message \
-\nUsage: Invoke the feeling of chaos.\
+\nUso: Invoke the feeling of chaos.\
 \n\n.weeb (text) or .weeb reply to message \
-\nUsage: a different style of alphabets .\
+\nUso: a different style of alphabets .\
 "
     }
 )

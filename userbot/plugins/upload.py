@@ -111,7 +111,7 @@ async def upload(path, event, udir_event):
             await event.client.send_file(
                 event.chat_id,
                 path,
-                caption=f"**File Name : **`{caption_rts}`",
+                caption=f"**Nome do arquivo : **`{caption_rts}`",
                 force_document=False,
                 thumb=thumb,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
@@ -132,7 +132,7 @@ async def upload(path, event, udir_event):
             await event.client.send_file(
                 event.chat_id,
                 path,
-                caption=f"**File Name : **`{caption_rts}`",
+                caption=f"**Nome do arquivo : **`{caption_rts}`",
                 thumb=thumb,
                 force_document=False,
                 supports_streaming=True,
@@ -292,11 +292,11 @@ CMD_HELP.update(
     {
         "upload": "**Plugin :** `upload`\
     \n\n**Syntax :** `.upload path of file/folder`\
-    \n**Usage : **Uploads the file from the server or list of filesfrom that folder\
+    \n**Uso : **Uploads the file from the server or list of filesfrom that folder\
     \n\n**Syntax : **`.uploadasstream path of video/audio`\
-    \n**Usage : **Uploads video/audio as streamable from the server\
+    \n**Uso : **Uploads video/audio as streamable from the server\
     \n\n**Syntax : **`.uploadasvn path of video`\
-    \n**Usage : **Uploads video/audio as round video from the server **Present supports few videos need to work onit takes some time to develop it **\
+    \n**Uso : **Uploads video/audio as round video from the server **Present supports few videos need to work onit takes some time to develop it **\
     "
     }
 )

@@ -133,7 +133,7 @@ CMD_HELP.update(
     {
         "watch": "**Plugin :** `watch`\
     \n\n**Syntax :** `.watch query`\
-    \n**Usage : **Fetches the list of sites(standard) where you can watch that movie\
+    \n**Uso : **Fetches the list of sites(standard) where you can watch that movie\
     "
     }
 )

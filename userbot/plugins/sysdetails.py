@@ -33,9 +33,9 @@ CMD_HELP.update(
     {
         "sysdetails": "**Plugin : **`sysdetails`\
         \n\n**Syntax : **`.sysd`\
-        \n**Usage : **Shows system information using neofetch.\
+        \n**Uso : **Shows system information using neofetch.\
         \n\n**Syntax : **`.cpu`\
-        \n**Usage : **shows the cpu information\
+        \n**Uso : **shows the cpu information\
     "
     }
 )

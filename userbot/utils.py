@@ -305,7 +305,7 @@ async def progress(
         )
         if file_name:
             await event.edit(
-                "{}\nFile Name: `{}`\n{}".format(type_of_ps, file_name, tmp)
+                "{}\nNome do arquivo: `{}`\n{}".format(type_of_ps, file_name, tmp)
             )
         else:
             await event.edit("{}\n{}".format(type_of_ps, tmp))
@@ -351,11 +351,11 @@ def time_formatter(milliseconds: int) -> str:
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
     tmp = (
-        ((str(days) + " day(s), ") if days else "")
-        + ((str(hours) + " hour(s), ") if hours else "")
-        + ((str(minutes) + " minute(s), ") if minutes else "")
-        + ((str(seconds) + " second(s), ") if seconds else "")
-        + ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
+        ((str(days) + " dia(s), ") if days else "")
+        + ((str(hours) + " hora(s), ") if hours else "")
+        + ((str(minutes) + " minuto(s), ") if minutes else "")
+        + ((str(seconds) + " segundo(s), ") if seconds else "")
+        + ((str(milliseconds) + " milisegundo(s), ") if milliseconds else "")
     )
     return tmp[:-2]
 

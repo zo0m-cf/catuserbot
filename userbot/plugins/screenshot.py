@@ -133,7 +133,7 @@ CMD_HELP.update(
         \n**Function : **__Takes a screenshot of a website and sends the screenshot.__\
         \n**Example of a valid URL :** `https://www.google.com`\
         \n\n**Syntax : **`.scapture <url>`\
-        \n**Usage : **__Takes a screenshot of a website and sends the screenshot need to set config var for this.__\
+        \n**Uso : **__Takes a screenshot of a website and sends the screenshot need to set config var for this.__\
         \n**Example of a valid URL : **`https://www.google.com`"
     }
 )

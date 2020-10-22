@@ -226,11 +226,11 @@ CMD_HELP.update(
     {
         "ytdl": "**Plugin :** `ytdl`\
     \n\n**Syntax :** `.yta link`\
-    \n**Usage : **downloads th audio from the given link(Suports the all sites which support youtube-dl)\
+    \n**Uso : **downloads th audio from the given link(Suports the all sites which support youtube-dl)\
     \n\n**Syntax : **`.ytv link`\
-    \n**Usage : **downloads th video from the given link(Suports the all sites which support youtube-dl)\
+    \n**Uso : **downloads th video from the given link(Suports the all sites which support youtube-dl)\
     \n\n**Syntax : ** `.yts query`\
-    \n**Usage : **Fetches youtube results you need api token for this\
+    \n**Uso : **Fetches youtube results you need api token for this\
     "
     }
 )

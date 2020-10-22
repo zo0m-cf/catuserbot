@@ -576,24 +576,24 @@ CMD_HELP.update(
     {
         "admin": "**Plugin : **`admin`\
         \n\n**Syntax : **`.setgpic` <reply to image>\
-        \n**Usage : **Changes the group's display picture\
+        \n**Uso : **Changes the group's display picture\
         \n\n**Syntax : **`.promote` <username/reply> <custom rank (optional)>\
-        \n**Usage : **Provides admin rights to the person in the chat.\
+        \n**Uso : **Provides admin rights to the person in the chat.\
         \n\n**Syntax : **`.demote `<username/reply>\
-        \n**Usage : **Revokes the person's admin permissions in the chat.\
+        \n**Uso : **Revokes the person's admin permissions in the chat.\
         \n\n**Syntax : **`.ban` <username/reply> <reason (optional)>\
-        \n**Usage : **Bans the person off your chat.\
+        \n**Uso : **Bans the person off your chat.\
         \n\n**Syntax : **`.unban` <username/reply>\
-        \n**Usage : **Removes the ban from the person in the chat.\
+        \n**Uso : **Removes the ban from the person in the chat.\
         \n\n**Syntax : **`.mute` <username/reply> <reason (optional)>\
-        \n**Usage : **Mutes the person in the chat, works on admins too.\
+        \n**Uso : **Mutes the person in the chat, works on admins too.\
         \n\n**Syntax : **`.unmute` <username/reply>\
-        \n**Usage : **Removes the person from the muted list.\
+        \n**Uso : **Removes the person from the muted list.\
         \n\n**Syntax : **`.pin `<reply> or `.pin loud`\
-        \n**Usage : **Pins the replied message in Group\
+        \n**Uso : **Pins the replied message in Group\
         \n\n**Syntax : **`.kick `<username/reply> \
-        \n**Usage : **kick the person off your chat.\
+        \n**Uso : **kick the person off your chat.\
         \n\n**Syntax : **`.iundlt`\
-        \n**Usage : **display last 5 deleted messages in group."
+        \n**Uso : **display last 5 deleted messages in group."
     }
 )

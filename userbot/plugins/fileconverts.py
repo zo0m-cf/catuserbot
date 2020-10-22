@@ -229,7 +229,7 @@ async def _(event):
             reply_message,
             Config.TMP_DOWNLOAD_DIRECTORY,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, event, c_time, "trying to download")
+                progress(d, t, event, c_time, "tentando baixar")
             ),
         )
     except Exception as e:  # pylint:disable=C0103,W0703
@@ -319,17 +319,17 @@ CMD_HELP.update(
     {
         "fileconverts": "**Plugin : **`fileconverts`\
     \n\n**Syntax : **`.stoi` reply to sticker\
-    \n**Usage :**Converts sticker to image\
+    \n**Uso :**Converts sticker to image\
     \n\n**Syntax : **`.itos` reply to image\
-    \n**Usage :**Converts image to sticker\
+    \n**Uso :**Converts image to sticker\
     \n\n**Syntax :** `.ftoi` reply to image file\
-    \n**Usage :** Converts Given image file to straemable form\
+    \n**Uso :** Converts Given image file to straemable form\
     \n\n**Syntax :** `.gif` reply to animated sticker\
-    \n**Usage :** Converts Given animated sticker to gif\
+    \n**Uso :** Converts Given animated sticker to gif\
     \n\n**Syntax :** `.ttf file name` reply to text message\
-    \n**Usage :** Converts Given text message to required file(given file name)\
+    \n**Uso :** Converts Given text message to required file(given file name)\
     \n\n**Syntax :**`.nfc voice` or `.nfc mp3` reply to required media to extract voice/mp3 :\
-    \n**Usage :**Converts the required media file to voice or mp3 file.\
+    \n**Uso :**Converts the required media file to voice or mp3 file.\
     "
     }
 )

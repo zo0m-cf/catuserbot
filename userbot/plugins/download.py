@@ -25,7 +25,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 async def _(event):
     if event.fwd_from:
         return
-    mone = await edit_or_reply(event, "`Processing ...`")
+    mone = await edit_or_reply(event, "`Processando ...`")
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -38,7 +38,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -47,7 +47,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await mone.edit(
-                f"__**➥ Downloaded in {ms} seconds.**__\n__**➥ Downloaded to :- **__ `{downloaded_file_name}`\n__**➥ Downloaded by :-**__ {DEFAULTUSER}"
+                f"__**➥ Baixado em {ms} segundos.**__\n__**➥ Baixado para :- **__ `{downloaded_file_name}`\n__**➥ Baixado por :-**__ {DEFAULTUSER}"
             )
     elif input_str:
         start = datetime.now()
@@ -70,14 +70,14 @@ async def _(event):
             diff = now - c_time
             percentage = downloader.get_progress() * 100
             downloader.get_speed()
-            progress_str = "{0}{1}\nProgress: {2}%".format(
+            progress_str = "{0}{1}\nProgresso: {2}%".format(
                 "".join(["█" for i in range(math.floor(percentage / 5))]),
                 "".join(["░" for i in range(20 - math.floor(percentage / 5))]),
                 round(percentage, 2),
             )
             estimated_total_time = downloader.get_eta(human=True)
             try:
-                current_message = f"trying to download\nURL: {url}\nFile Name: {file_name}\n{progress_str}\n{humanbytes(downloaded)} of {humanbytes(total_length)}\nETA: {estimated_total_time}"
+                current_message = f"tentando baixar\nURL: {url}\nNome do arquivo: {file_name}\n{progress_str}\n{humanbytes(downloaded)} of {humanbytes(total_length)}\nETA: {estimated_total_time}"
                 if round(diff % 10.00) == 0 and current_message != display_message:
                     await mone.edit(current_message)
                     display_message = current_message
@@ -87,17 +87,17 @@ async def _(event):
         ms = (end - start).seconds
         if downloader.isSuccessful():
             await mone.edit(
-                f"__**➥ Downloaded in {ms} seconds.**__\n__**➥ Downloaded to :- **__ `{downloaded_file_name}`\n__**➥ Downloaded by :-**__ {DEFAULTUSER}"
+                f"__**➥ Baixado em {ms} segundos.**__\n__**➥ Baixado para :- **__ `{downloaded_file_name}`\n__**➥ Baixado por :-**__ {DEFAULTUSER}"
             )
         else:
-            await mone.edit("Incorrect URL\n {}".format(input_str))
+            await mone.edit("URL Inválido\n {}".format(input_str))
     else:
-        await mone.edit("Reply to a message to download to my local server.")
+        await mone.edit("Responda a uma mensagem para fazer o download no meu servidor local.")
 
 
 CMD_HELP.update(
     {
-        "download": ".download <link|filename> or reply to media\
-\nUsage: Downloads file to the server."
+        "download": ".download <link|filename> ou responder à mídia\
+\nUso: Baixa o arquivo para o servidor."
     }
 )

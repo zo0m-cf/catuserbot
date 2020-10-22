@@ -78,7 +78,7 @@ async def cmd_list(event):
         else:
             string = "<b>Please specify which plugin do you want help for !!\
                 \nNumber of plugins : </b><code>{count}</code>\
-                \n<b>Usage:</b> <code>.help</code> plugin name\n\n"
+                \n<b>Uso:</b> <code>.help</code> plugin name\n\n"
             catcount = 0
             for i in sorted(CMD_LIST):
                 string += "◆" + f"<code>{str(i)}</code>"
@@ -137,7 +137,7 @@ async def info(event):
     else:
         string = "<b>Please specify which plugin do you want help for !!\
             \nNumber of plugins : </b><code>{count}</code>\
-            \n<b>Usage:</b> <code>.help</code> plugin name\n\n"
+            \n<b>Uso:</b> <code>.help</code> plugin name\n\n"
         catcount = 0
         for i in sorted(SUDO_LIST):
             string += "◆" + f"<code>{str(i)}</code>"
@@ -161,7 +161,7 @@ async def info(event):
     else:
         string = "<b>Please specify which plugin do you want help for !!\
             \nNumber of plugins : </b><code>{count}</code>\
-            \n<b>Usage : </b><code>.info</code> <plugin name>\n\n"
+            \n<b>Uso : </b><code>.info</code> <plugin name>\n\n"
         catcount = 0
         for i in sorted(CMD_HELP):
             string += "◆ " + f"<code>{str(i)}</code>"

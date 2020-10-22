@@ -102,6 +102,6 @@ CMD_HELP.update(
     {
         "mediainfo": "**Plugin :** `mediainfo`\
       \n\n**Syntax : **`.minfo` reply to media \
-      \n**Usage : ** shows you the media information."
+      \n**Uso : ** shows you the media information."
     }
 )

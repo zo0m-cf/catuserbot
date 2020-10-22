@@ -109,7 +109,7 @@ async def variable(var):
 @borg.on(sudo_cmd(pattern="usage$", allow_sudo=True))
 async def dyno_usage(dyno):
     """
-    Get your account Dyno Usage
+    Get your account Dyno Uso
     """
     dyno = await edit_or_reply(dyno, "`Processing...`")
     useragent = (
@@ -153,7 +153,7 @@ async def dyno_usage(dyno):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     return await dyno.edit(
-        "**Dyno Usage**:\n\n"
+        "**Dyno Uso**:\n\n"
         f" -> `Dyno usage for`  **{Var.HEROKU_APP_NAME}**:\n"
         f"     •  `{AppHours}`**h**  `{AppMinutes}`**m**  "
         f"**|**  [`{AppPercentage}`**%**]"
@@ -201,6 +201,6 @@ def prettyjson(obj, indent=2, maxlinelength=80):
 
 CMD_HELP.update(
     {
-        "heroku": "Info for Module to Manage Heroku:**\n\n`.usage`\nUsage:__Check your heroku dyno hours status.__\n\n`.set var <NEW VAR> <VALUE>`\nUsage: __add new variable or update existing value variable__\n**!!! WARNING !!!, after setting a variable the bot will restart.**\n\n`.get var or .get var <VAR>`\nUsage: __get your existing varibles, use it only on your private group!__\n**This returns all of your private information, please be cautious...**\n\n`.del var <VAR>`\nUsage: __delete existing variable__\n**!!! WARNING !!!, after deleting variable the bot will restarted**\n\n`.herokulogs`\nUsage:sends you recent 100 lines of logs in heroku"
+        "heroku": "Info for Module to Manage Heroku:**\n\n`.usage`\nUso:__Check your heroku dyno hours status.__\n\n`.set var <NEW VAR> <VALUE>`\nUso: __add new variable or update existing value variable__\n**!!! WARNING !!!, after setting a variable the bot will restart.**\n\n`.get var or .get var <VAR>`\nUso: __get your existing varibles, use it only on your private group!__\n**This returns all of your private information, please be cautious...**\n\n`.del var <VAR>`\nUso: __delete existing variable__\n**!!! WARNING !!!, after deleting variable the bot will restarted**\n\n`.herokulogs`\nUso:sends you recent 100 lines of logs in heroku"
     }
 )

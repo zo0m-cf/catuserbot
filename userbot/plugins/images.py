@@ -61,6 +61,6 @@ CMD_HELP.update(
     {
         "images": "**Plugin :**`images`\
 \n\n**Syntax :** `.img <limit> <Name>` or `.img <limit> (replied message)`\
-    \n**Usage : **do google image search and sends 3 images. default if you havent mentioned limit"
+    \n**Uso : **do google image search and sends 3 images. default if you havent mentioned limit"
     }
 )

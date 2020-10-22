@@ -117,11 +117,11 @@ CMD_HELP.update(
     {
         "lydia": "**Plugin : **`lydia`\
     \n\n**Syntax : **`.enai` reply to a user\
-    \n**Usage : **your bot will auto reply to the tagged user until you stops it by `.remcf`\
+    \n**Uso : **your bot will auto reply to the tagged user until you stops it by `.remcf`\
     \n\n**Syntax : **`.reai` reply to the user\
-    \n**Usage : **disables the lydia\
+    \n**Uso : **disables the lydia\
     \n\n**Syntax : **`.liai`\
-    \n**Usage : ** to list the users to whom you enabled ai(lydia)\
+    \n**Uso : ** to list the users to whom you enabled ai(lydia)\
     \n\n for functioning this plugin you need to set the heroku var\
     \n the key is `LYDIA_API_KEY` and get var from `https://coffeehouse.intellivoid.net/`\
 "

@@ -41,7 +41,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
             directory_name = downloaded_file_name
@@ -108,7 +108,7 @@ async def _(event):
                     reply_message,
                     Config.TMP_DOWNLOAD_DIRECTORY,
                     progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                        progress(d, t, mone, c_time, "trying to download")
+                        progress(d, t, mone, c_time, "tentando baixar")
                     ),
                 )
             except Exception as e:
@@ -158,7 +158,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
             directory_name = downloaded_file_name
@@ -206,7 +206,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
             directory_name = downloaded_file_name
@@ -287,7 +287,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
         except Exception as e:
@@ -379,7 +379,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to download")
+                    progress(d, t, mone, c_time, "tentando baixar")
                 ),
             )
         except Exception as e:  # pylint:disable=C0103,W0703
@@ -409,17 +409,17 @@ def get_lst_of_files(input_directory, output_lst):
 CMD_HELP.update(
     {
         "archive": "**Syntax : **`.zip reply to a file/media`\
-    \n**Usage : **it will zip that file/media\
+    \n**Uso : **it will zip that file/media\
     \n\n**Syntax : **`.rar reply to a file/media`\
-    \n**Usage : **it will rar that file/media\
+    \n**Uso : **it will rar that file/media\
     \n\n**Syntax : **`.tar reply to a file/media`\
-    \n**Usage : **it will tar that file/media\
+    \n**Uso : **it will tar that file/media\
     \n\n**Syntax : **`.unzip reply to a .zip file`\
-    \n**Usage : **it will unzip that .zip file\
+    \n**Uso : **it will unzip that .zip file\
     \n\n**Syntax : **`.unrar reply to a .rar file`\
-    \n**Usage : **it will unrar that .rar file\
+    \n**Uso : **it will unrar that .rar file\
     \n\n**Syntax : **`.untar reply to a .tar`\
-    \n**Usage : **it will untar that .tar file\
+    \n**Uso : **it will untar that .tar file\
 "
     }
 )

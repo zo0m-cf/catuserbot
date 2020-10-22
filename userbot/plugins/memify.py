@@ -707,23 +707,23 @@ CMD_HELP.update(
     {
         "memify": "**Plugin : **`memify`\
     \n\n**Syntax :** `.mmf toptext ; bottomtext`\
-    \n**Usage : **Creates a image meme with give text at specific locations and sends\
+    \n**Uso : **Creates a image meme with give text at specific locations and sends\
     \n\n**Syntax : **`.mms toptext ; bottomtext`\
-    \n**Usage : **Creates a sticker meme with give text at specific locations and sends\
+    \n**Uso : **Creates a sticker meme with give text at specific locations and sends\
     \n\n**Syntax : **`.invert`\
-    \n**Usage : **Inverts the colors in media file\
+    \n**Uso : **Inverts the colors in media file\
     \n\n**Syntax : **`.solarize`\
-    \n**Usage : **Watch sun buring ur media file\
+    \n**Uso : **Watch sun buring ur media file\
     \n\n**Syntax : **`.mirror`\
-    \n**Usage : **shows you the reflection of the media file\
+    \n**Uso : **shows you the reflection of the media file\
     \n\n**Syntax : **`.flip`\
-    \n**Usage : **shows you the upside down image of the given media file\
+    \n**Uso : **shows you the upside down image of the given media file\
     \n\n**Syntax : **`.gray`\
-    \n**Usage : **makes your media file to black and white\
+    \n**Uso : **makes your media file to black and white\
     \n\n**Syntax : **`.zoom` or `.zoom range`\
-    \n**Usage : **zooms your media file\
+    \n**Uso : **zooms your media file\
     \n\n**Syntax : **`.frame` or `.frame range` or `.frame range ; fill`\
-    \n**Usage : **make a frame for your media file\
+    \n**Uso : **make a frame for your media file\
     \n**fill:** This defines the pixel fill value or color value to be applied. The default value is 0 which means the color is black.\
     "
     }

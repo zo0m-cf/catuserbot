@@ -78,6 +78,6 @@ CMD_HELP.update(
     {
         "stt": "**Plugin : **`stt`\
     \n\n**Syntax :** `.stt en` reply this to voice message\
-    \n**Usage : **speech to text module"
+    \n**Uso : **speech to text module"
     }
 )

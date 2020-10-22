@@ -52,11 +52,11 @@ CMD_HELP.update(
     {
         "power_tools": "**Plugin : **`power_tools`\
                 \n\n**Syntax : **`.restart`\
-                \n**Usage : **Restarts the bot !!\
+                \n**Uso : **Restarts the bot !!\
                 \n\n**Syntax : **'.sleep <seconds>\
-                \n**Usage: **Userbots get tired too. Let yours snooze for a few seconds.\
+                \n**Uso: **Userbots get tired too. Let yours snooze for a few seconds.\
                 \n\n**Syntax : **`.shutdown`\
-                \n**Usage : **Sometimes you need to shut down your bot. Sometimes you just hope to\
+                \n**Uso : **Sometimes you need to shut down your bot. Sometimes you just hope to\
                 hear Windows XP shutdown sound... but you don't."
     }
 )

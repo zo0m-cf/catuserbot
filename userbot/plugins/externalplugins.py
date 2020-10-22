@@ -48,7 +48,7 @@ CMD_HELP.update(
     {
         "externalplugins": "**externalplugins**\
     \n**Syntax :** `.extdl`\
-    \n**Usage : **To install external plugins Create a private channel and post there all your external modules and set a var in heroku as `PLUGIN_CHANNEL` and value with channel id \
+    \n**Uso : **To install external plugins Create a private channel and post there all your external modules and set a var in heroku as `PLUGIN_CHANNEL` and value with channel id \
     so after each restart or update simply type  `.extdl` to install all external modules\
     "
     }

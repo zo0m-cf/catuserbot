@@ -74,7 +74,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "antiflood": ".setflood [number]\
-\nUsage: warns the user if he spams the chat  if you are admin mutes him in that group .\
+\nUso: warns the user if he spams the chat  if you are admin mutes him in that group .\
 "
     }
 )

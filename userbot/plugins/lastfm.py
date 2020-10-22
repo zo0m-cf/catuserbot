@@ -231,10 +231,10 @@ CMD_HELP.update(
     {
         "lastfm": "**Plugin : **`lastfm`\
     \n\n**Syntax : **`.lastfm`\
-    \n**Usage : **Shows currently scrobbling track or most recent scrobbles if nothing is playing.\
+    \n**Uso : **Shows currently scrobbling track or most recent scrobbles if nothing is playing.\
     \n\n**Syntax : **`.lastbio <on/off>`\
-    \n**Usage : **Enables/Disables last.fm current playing to bio.\
+    \n**Uso : **Enables/Disables last.fm current playing to bio.\
     \n\n**Syntax : **`.lastlog <on/off>`\
-    \n**Usage : **Enable/Disable last.fm bio logging in the bot-log group."
+    \n**Uso : **Enable/Disable last.fm bio logging in the bot-log group."
     }
 )

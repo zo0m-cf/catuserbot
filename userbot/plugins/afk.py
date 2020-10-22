@@ -36,15 +36,15 @@ async def set_not_afk(event):
     if "afk" not in current_message and "on" in USERAFK_ON:
         shite = await borg.send_message(
             event.chat_id,
-            "__Back alive!__\n**No Longer afk.**\n `Was afk for:``"
+            "__Estou de volta!__\n**Não estou mais AFK.**\n `Fiquei AFK por:``"
             + total_afk_time
             + "`",
         )
         if BOTLOG:
             await borg.send_message(
                 BOTLOG_CHATID,
-                "#AFKFALSE \nSet AFK mode to False\n"
-                + "__Back alive!__\n**No Longer afk.**\n `Was afk for:``"
+                "#AFKFALSE \nDefina o modo AFK para False\n"
+                + "__Estou de volta!__\n**Não estou mais AFK.**\n `Fiquei AFK por:``"
                 + total_afk_time
                 + "`",
             )
@@ -77,10 +77,10 @@ async def on_afk(event):
     if USERAFK_ON and not (await event.get_sender()).bot:
         msg = None
         message_to_reply = (
-            f"__My Master Has Been In afk For__ `{total_afk_time}`\nWhere He Is: ONLY GOD KNOWS "
-            + f"\n\n__I promise He'll back in a few light years__\n**REASON**: {reason}"
+            f"__Meu Dono Está em Afk Por__ `{total_afk_time}`\nOnde ele está: SÓ DEUS SABE "
+            + f"\n\n__Eu prometo que ele voltará em alguns anos-luz__\n**MOTIVO**: {reason}"
             if reason
-            else f"**Heya!**\n__I am currently unavailable. Since when, you ask? For {total_afk_time} I guess.__\n\nWhen will I be back? Soon __Whenever I feel like it__**( ಠ ʖ̯ ಠ)**  "
+            else f"**Ei!**\n__No momento estou indisponível. Desde quando, você pergunta? Por {total_afk_time} Eu acho.__\n\nQuando estarei de volta? Em breve __Quando eu tiver vontade__**( ಠ ʖ̯ ಠ)**  "
         )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
@@ -94,8 +94,8 @@ async def on_afk(event):
             if not event.is_private:
                 await event.client.send_message(
                     Config.PM_LOGGR_BOT_API_ID,
-                    f"#AFK_TAGS \n<b>Group : </b><code>{hmm.title}</code>\
-                            \n<b>Message : </b><a href = 'https://t.me/c/{hmm.id}/{event.message.id}'> link</a>",
+                    f"#AFK_TAGS \n<b>Grupo : </b><code>{hmm.title}</code>\
+                            \n<b>Mensagem : </b><a href = 'https://t.me/c/{hmm.id}/{event.message.id}'> link</a>",
                     parse_mode="html",
                     link_preview=False,
                 )
@@ -127,16 +127,16 @@ async def _(event):
         USERAFK_ON = f"on: {reason}"
         if reason:
             await borg.send_message(
-                event.chat_id, f"**I shall be Going afk!** __because ~ {reason}__"
+                event.chat_id, f"**Eu estarei indo embora!** __motivo ~ {reason}__"
             )
         else:
-            await borg.send_message(event.chat_id, f"**I am Going afk!**")
+            await borg.send_message(event.chat_id, f"**Estou indo afk!**")
         await asyncio.sleep(5)
         await event.delete()
         if BOTLOG:
             await borg.send_message(
                 BOTLOG_CHATID,
-                f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",
+                f"#AFKTRUE \nDefina o modo AFK como Verdadeiro e a Razão será {reason}",
             )
 
 
@@ -144,9 +144,9 @@ CMD_HELP.update(
     {
         "afk": "**Plugin : **`afk`\
         \n\n**Syntax : **`.afk [Optional Reason]`\
-\n**Usage : **Sets you as afk.\nReplies to anyone who tags/PM's \
-you telling them that you are AFK(reason).\n\nSwitches off AFK when you type back anything, anywhere.\
-\nafk means away from keyboard/keypad.\
+\n**Uso : **Define você como afk.\nRespostas para quem marca/PM's \
+você dizendo a eles que você está AFK(motivo).\n\nDesliga o AFK quando você digita qualquer coisa, em qualquer lugar.\
+\nafk significa longe do teclado.\
 "
     }
 )

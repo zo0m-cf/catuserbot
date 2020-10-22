@@ -242,7 +242,7 @@ async def payf(event):
 async def source(e):
     await edit_or_reply(
         e,
-        "Click [here](https://github.com/sandy1709/catuserbot) to open this lit af repo.",
+        "Click [here](https://github.com/xmtscf/catuserbot) to open this lit af repo.",
     )
 
 
@@ -434,53 +434,53 @@ CMD_HELP.update(
     {
         "memes": "**Plugin : **`memes`\
         \n\n**Syntax :** `.cowsay`\
-        \n**Usage : **cow which says things.\
+        \n**Uso : **cow which says things.\
         \n\n**Syntax :** `.coin <heads/tails>`\
-        \n**Usage : **Flips a coin !!\
+        \n**Uso : **Flips a coin !!\
         \n\n**Syntax :** `.slap`\
-        \n**Usage : **reply to slap them with random objects !!\
+        \n**Uso : **reply to slap them with random objects !!\
         \n\n**Syntax :** `.yes` ,`.no` , `.maybe` , `.decide`\
-        \n**Usage : **Sends you the respectively gif of command u used\
+        \n**Uso : **Sends you the respectively gif of command u used\
         \n\n**Syntax :** `.shout text`\
-        \n**Usage : **shouts the text in a fun way\
+        \n**Uso : **shouts the text in a fun way\
         \n\n**Syntax :** `.owo`\
-        \n**Usage : **UwU\
+        \n**Uso : **UwU\
         \n\n**Syntax :** `.clap`\
-        \n**Usage : **Praise people!\
+        \n**Uso : **Praise people!\
         \n\n**Syntax :** `.smk <text/reply>`\
-        \n**Usage : **A shit module for ツ , who cares.\
+        \n**Uso : **A shit module for ツ , who cares.\
         \n\n**Syntax :** `.ftext <emoji/character>`\
-        \n**Usage : **Pay Respects.\
+        \n**Uso : **Pay Respects.\
         \n\n**Syntax :** `.repo`\
-        \n**Usage : **Shows to source code link of catuserbot.\
+        \n**Uso : **Shows to source code link of catuserbot.\
         \n\n**Syntax :** `.congo`\
-        \n**Usage : **Congratulate the people.\
+        \n**Uso : **Congratulate the people.\
         \n\n**Syntax :** `.shg`\
-        \n**Usage : **Shrug at it !!\
+        \n**Uso : **Shrug at it !!\
         \n\n**Syntax :** `.runs`\
-        \n**Usage : **Run, run, RUNNN!\
+        \n**Uso : **Run, run, RUNNN!\
         \n\n**Syntax :** `.noob`\
-        \n**Usage : **Whadya want to know? Are you a NOOB?\
+        \n**Uso : **Whadya want to know? Are you a NOOB?\
         \n\n**Syntax :** `.insult`\
-        \n**Usage : **insult someone\
+        \n**Uso : **insult someone\
         \n\n**Syntax :** `.hey`\
-        \n**Usage : **start a conversation with people\
+        \n**Uso : **start a conversation with people\
         \n\n**Syntax :** `.pro`\
-        \n**Usage : **If you think you're pro, try this.\
+        \n**Uso : **If you think you're pro, try this.\
         \n\n**Syntax :** `.react` <type>\
-        \n**Usage : **Make your userbot react. types are <happy ,think ,wave ,wtf ,love ,confused,dead, sad,dog>\
+        \n**Uso : **Make your userbot react. types are <happy ,think ,wave ,wtf ,love ,confused,dead, sad,dog>\
         \n\n**Syntax :** `.10iq`\
-        \n**Usage : **You retard !!\
+        \n**Uso : **You retard !!\
         \n\n**Syntax :** `.fp`\
-        \n**Usage : **send you face pam emoji!\
+        \n**Uso : **send you face pam emoji!\
         \n\n**Syntax :** `.bt`\
-        \n**Usage : **Believe me, you will find this useful.\
+        \n**Uso : **Believe me, you will find this useful.\
         \n\n**Syntax :** `.session`\
-        \n**Usage : **telethon session error code(fun)\
+        \n**Uso : **telethon session error code(fun)\
         \n\n**Syntax :** `.lfy <query>`\
-        \n**Usage : **Let me Google that for you real quick !!\
+        \n**Uso : **Let me Google that for you real quick !!\
         \n\n**Syntax :** `.gbun <reason>`\
-        \n**Usage : **Fake gban action !!\
+        \n**Uso : **Fake gban action !!\
 "
     }
 )

@@ -196,18 +196,18 @@ async def _(event):
 CMD_HELP.update(
     {
         "profile": ".username <new_username>\
-\nUsage: Changes your Telegram username.\
+\nUso: Changes your Telegram username.\
 \n\n.pname <firstname> or .pname <firstname> <lastname>\
-\nUsage: Changes your Telegram name.(First and last name will get split by the first space)\
+\nUso: Changes your Telegram name.(First and last name will get split by the first space)\
 \n\n.setpfp or .ppic\
-\nUsage: Reply with .setpfp or .ppic to an image to change your Telegram profie picture.\
+\nUso: Reply with .setpfp or .ppic to an image to change your Telegram profie picture.\
 \n\n.pbio <new_bio>\
-\nUsage: Changes your Telegram bio.\
+\nUso: Changes your Telegram bio.\
 \n\n.delpfp or .delpfp <number>/<all>\
-\nUsage: Deletes your Telegram profile picture(s).\
+\nUso: Deletes your Telegram profile picture(s).\
 \n\n.myusernames\
-\nUsage: Shows usernames reserved by you.that is created by you channels or groups\
+\nUso: Shows usernames reserved by you.that is created by you channels or groups\
 \n\n.count\
-\nUsage: Counts your groups, chats, bots etc..."
+\nUso: Counts your groups, chats, bots etc..."
     }
 )

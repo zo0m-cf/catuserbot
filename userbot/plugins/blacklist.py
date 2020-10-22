@@ -98,11 +98,11 @@ CMD_HELP.update(
     {
         "blacklist": "**blacklist**\
     \n**Syntax : **`.addblacklist` <word/words>\
-    \n**Usage : **The given word or words will be added to blacklist in that specific chat if any user sends then the message deletes.\
+    \n**Uso : **The given word or words will be added to blacklist in that specific chat if any user sends then the message deletes.\
     \n\n**Syntax : **`.rmblacklist` <word/words>\
-    \n**Usage : **The given word or words will be removed from blacklist in that specific chat\
+    \n**Uso : **The given word or words will be removed from blacklist in that specific chat\
     \n\n**Syntax : **`.listblacklist`\
-    \n**Usage : **Shows you the list of blacklist words in that specific chat\
+    \n**Uso : **Shows you the list of blacklist words in that specific chat\
     \n\n**Note : **if you are adding more than one word at time via this then remember that new word must be given in new line that is not [hi hello] . it must be as\
     \n[hi \n hello]"
     }

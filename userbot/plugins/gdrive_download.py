@@ -78,7 +78,7 @@ async def get_file_name(content):
         if c_append:
             file_name += c
     file_name = file_name.replace('"', "")
-    print("File Name: " + str(file_name))
+    print("Nome do arquivo: " + str(file_name))
     return file_name
 
 

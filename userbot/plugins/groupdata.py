@@ -708,20 +708,20 @@ CMD_HELP.update(
     {
         "groupdata": "**Plugin : **`groupdata`\
     \n\n**Syntax : **`.kickme`\
-    \n**Usage : **Throws you away from that chat\
+    \n**Uso : **Throws you away from that chat\
     \n\n**Syntax : **`.get_admins or .get_admins <username of group >`\
-    \n**Usage : **Retrieves a list of admins in the chat.\
+    \n**Uso : **Retrieves a list of admins in the chat.\
     \n\n**Syntax : **`.get_bots or .get_bots <username of group >`\
-    \n**Usage : **Retrieves a list of bots in the chat.\
+    \n**Uso : **Retrieves a list of bots in the chat.\
     \n\n**Syntax : **`.users or .users <name of member>`\
-    \n**Usage : **Retrieves all (or queried) users in the chat.\
+    \n**Uso : **Retrieves all (or queried) users in the chat.\
     \n\n**Syntax : **`.unbanall`\
-    \n**Usage: **Unbans everyone who are blocked in that group \
+    \n**Uso: **Unbans everyone who are blocked in that group \
     \n\n**Syntax : **`.ikuck`\
-    \n**Usage: **stats of the group like no of users no of deleted users. \
+    \n**Uso: **stats of the group like no of users no of deleted users. \
     \n\n**Syntax : **`.chatinfo or .chatinfo <username of group>`\
-    \n**Usage : **Shows you the total information of the required chat.\
+    \n**Uso : **Shows you the total information of the required chat.\
     \n\n**Syntax : **`.zombies`\
-    \n**Usage :** Searches for deleted accounts in a group. Use `.zombies clean` to remove deleted accounts from the group."
+    \n**Uso :** Searches for deleted accounts in a group. Use `.zombies clean` to remove deleted accounts from the group."
     }
 )

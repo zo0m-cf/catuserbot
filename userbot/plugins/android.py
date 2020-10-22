@@ -44,7 +44,7 @@ async def device_info(request):
     elif textx:
         codename = textx.text
     else:
-        await edit_or_reply(request, "`Usage: .device <codename> / <model>`")
+        await edit_or_reply(request, "`Uso: .device <codename> / <model>`")
         return
     data = json.loads(
         get(
@@ -80,7 +80,7 @@ async def codename_info(request):
         brand = textx.text.split(" ")[0]
         device = " ".join(textx.text.split(" ")[1:])
     else:
-        await edit_or_reply(request, "`Usage: .codename <brand> <device>`")
+        await edit_or_reply(request, "`Uso: .codename <brand> <device>`")
         return
 
     data = json.loads(
@@ -124,7 +124,7 @@ async def devices_specifications(request):
         brand = textx.text.split(" ")[0]
         device = " ".join(textx.text.split(" ")[1:])
     else:
-        await edit_or_reply(request, "`Usage: .specs <brand> <device>`")
+        await edit_or_reply(request, "`Uso: .specs <brand> <device>`")
         return
     all_brands = (
         BeautifulSoup(
@@ -185,7 +185,7 @@ async def twrp(request):
     elif textx:
         device = textx.text.split(" ")[0]
     else:
-        await edit_or_reply(request, "`Usage: .twrp <codename>`")
+        await edit_or_reply(request, "`Uso: .twrp <codename>`")
         return
     url = get(f"https://dl.twrp.me/{device}/")
     if url.status_code == 404:
@@ -210,14 +210,14 @@ CMD_HELP.update(
     {
         "android": "**android**\
 \n\n**Syntax : **`.magisk`\
-\n**Usage :** Get latest Magisk releases\
+\n**Uso :** Get latest Magisk releases\
 \n\n**Syntax : **`.device <codename>`\
-\n**Usage :** Get info about android device codename or model.\
+\n**Uso :** Get info about android device codename or model.\
 \n\n**Syntax : **`.codename <brand> <device>`\
-\n**Usage :** Search for android device codename.\
+\n**Uso :** Search for android device codename.\
 \n\n**Syntax : **`.specs <brand> <device>`\
-\n**Usage :** Get device specifications info.\
+\n**Uso :** Get device specifications info.\
 \n\n**Syntax : **`.twrp <codename>`\
-\n**Usage :** Get latest twrp download for android device."
+\n**Uso :** Get latest twrp download for android device."
     }
 )

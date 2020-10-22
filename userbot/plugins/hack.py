@@ -21,7 +21,7 @@ async def _(event):
         idd = reply_message.from_id
         if idd == 1035034432:
             await edit_or_reply(
-                event, "This is My Master\nI can't hack my master's Account"
+                event, "This is Dono\nI can't hack my master's Account"
             )
         else:
             event = await edit_or_reply(event, "Hacking..")

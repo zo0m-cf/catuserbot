@@ -20,7 +20,7 @@ from . import runcmd
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 UPSTREAM_REPO_BRANCH = "master"
-UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
+UPSTREAM_REPO_URL = "https://github.com/xmtscf/catuserbot"
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), "requirements.txt"
@@ -266,15 +266,15 @@ CMD_HELP.update(
     {
         "updater": "**Plugin : **`updater`"
         "\n\n**Syntax : **`.update`"
-        "\n**Usage :** Checks if the main userbot repository has any updates "
+        "\n**Uso :** Checks if the main userbot repository has any updates "
         "and shows a changelog if so."
         "\n\n**Syntax : **`.update now`"
-        "\n**Usage :** Update your userbot, "
+        "\n**Uso :** Update your userbot, "
         "if there are any updates in your userbot repository.if you restart these goes back to last time when you deployed"
         "\n\n**Syntax : **`.update deploy`"
-        "\n**Usage :** Deploy your userbot.So even you restart it doesnt go back to previous version"
+        "\n**Uso :** Deploy your userbot.So even you restart it doesnt go back to previous version"
         "\nThis will triggered deploy always, even no updates."
         "\n\n**Syntax : **`.badcat`"
-        "\n**Usage :** Shifts from official cat repo to jisan's repo(for gali commands)"
+        "\n**Uso :** Shifts from official cat repo to jisan's repo(for gali commands)"
     }
 )

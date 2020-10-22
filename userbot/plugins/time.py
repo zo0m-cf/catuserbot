@@ -214,10 +214,10 @@ CMD_HELP.update(
     {
         "time": "**Plugin : **`time`\
         \n\n**Syntax : **.ctime <country name/code> <timezone number> \
-    \n**Usage : ** Get the time of a country. If a country has multiple timezones, it will list all of them and let you select one.\
+    \n**Uso : ** Get the time of a country. If a country has multiple timezones, it will list all of them and let you select one.\
     \n\n**Syntax : **.cdate <country name/code> <timezone number> \
-    \n**Usage : ** Get the date of a country. If a country has multiple timezones, it will list all of them \and let you select one.\
+    \n**Uso : ** Get the date of a country. If a country has multiple timezones, it will list all of them \and let you select one.\
     \n\n**Syntax : **`.time` \
-    \n**Usage : ** shows current default time you can change by changing TZ in heroku vars"
+    \n**Uso : ** shows current default time you can change by changing TZ in heroku vars"
     }
 )

@@ -32,14 +32,14 @@ async def _(event):
             reply_message,
             downloaded_file_name,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, catevent, c_time, "trying to download", file_name)
+                progress(d, t, catevent, c_time, "tentando baixar", file_name)
             ),
         )
         end = datetime.now()
         ms = (end - start).seconds
         if os.path.exists(downloaded_file_name):
             await catevent.edit(
-                f"**File Downloaded in {ms} seconds.**\n**File location : **`{downloaded_file_name}`"
+                f"**Arquivo Baixado em {ms} seconds.**\n**File location : **`{downloaded_file_name}`"
             )
         else:
             await catevent.edit("Error Occurred\n {}".format(input_str))
@@ -75,7 +75,7 @@ async def _(event):
             reply_message,
             downloaded_file_name,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, catevent, c_time, "trying to download", file_name)
+                progress(d, t, catevent, c_time, "tentando baixar", file_name)
             ),
         )
         end = datetime.now()

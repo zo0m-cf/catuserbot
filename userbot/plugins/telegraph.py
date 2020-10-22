@@ -106,9 +106,9 @@ CMD_HELP.update(
     {
         "telegraph": "**Plugin :**`telegraph`\
      \n\n**Syntax :** `.telegraph media`\
-     \n**Usage :** Reply to any image or video to upload it to telgraph(video must be less than 5mb)\
+     \n**Uso :** Reply to any image or video to upload it to telgraph(video must be less than 5mb)\
      \n\n**Syntax :** `.telegraph text`\
-     \n**Usage :** reply to any text file or any message to paste it to telegraph\
+     \n**Uso :** reply to any text file or any message to paste it to telegraph\
     "
     }
 )

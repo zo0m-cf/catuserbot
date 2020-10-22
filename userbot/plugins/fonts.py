@@ -194,7 +194,7 @@ CMD_HELP.update(
     \n**Syntax :** `.fmusical`\
     \n        `.ancient`\
     \n        `.vapor`\
-    \n**Usage : **differnt font styles\
+    \n**Uso : **differnt font styles\
 "
     }
 )

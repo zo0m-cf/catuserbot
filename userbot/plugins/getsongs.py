@@ -187,12 +187,12 @@ CMD_HELP.update(
     {
         "getsongs": "**Plugin : **`getsongs`\
         \n\n**Syntax : **`.song query` or `.song reply to song name`\
-        \n**Usage : **searches the song you entered in query and sends it quality of it is 128k\
+        \n**Uso : **searches the song you entered in query and sends it quality of it is 128k\
         \n\n**Syntax : **`.song320 query` or `.song320 reply to song name`\
-        \n**Usage : **searches the song you entered in query and sends it quality of it is 320k\
+        \n**Uso : **searches the song you entered in query and sends it quality of it is 320k\
         \n\n**Syntax : **`.vsong query` or `.vsong reply to song name`\
-        \n**Usage : **Searches the video song you entered in query and sends it\
+        \n**Uso : **Searches the video song you entered in query and sends it\
         \n\n**Syntax : **`.spd song`\
-        \n**Usage : **Searches the song from the bot @SpotifyMusicDownloaderBot  and sends you"
+        \n**Uso : **Searches the song from the bot @SpotifyMusicDownloaderBot  and sends you"
     }
 )

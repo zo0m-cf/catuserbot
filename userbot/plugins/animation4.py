@@ -48,7 +48,7 @@ async def _(event):
         "👁👁\n  👅  =====> Go away",
         "👁👁\n  💋  =====> Stop laughing",
         "👁👁\n  👄  =====> It's not funny",
-        "👁👁\n  👅  =====> I guess ur still looking",
+        "👁👁\n  👅  =====> Eu acho ur still looking",
         "👁👁\n  💋  =====> Ok man 😑",
         "👁👁\n  👄  =====> I go away then",
     ]

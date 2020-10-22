@@ -27,7 +27,7 @@ async def ff_mpeg_trim_cmd(event):
                     reply_message,
                     FF_MPEG_DOWN_LOAD_MEDIA_PATH,
                     progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                        progress(d, t, event, c_time, "trying to download")
+                        progress(d, t, event, c_time, "tentando baixar")
                     ),
                 )
             except Exception as e:  # pylint:disable=C0103,W0703

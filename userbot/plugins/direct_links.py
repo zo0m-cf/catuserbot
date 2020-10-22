@@ -32,7 +32,7 @@ async def direct_link_generator(request):
     elif textx:
         message = textx.text
     else:
-        await catevent.edit("`Usage: .direct <url>`")
+        await catevent.edit("`Uso: .direct <url>`")
         return
     reply = ""
     links = re.findall(r"\bhttps?://.*\.\S+", message)

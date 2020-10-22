@@ -308,15 +308,15 @@ CMD_HELP.update(
     {
         "pmpermit": "**Plugin : **`pmpermit`\
         \n\n**Syntax : **.approve`\
-        \n**Usage : **Approves the mentioned/replied person to PM.\
+        \n**Uso : **Approves the mentioned/replied person to PM.\
         \n\n**Syntax : **`.disapprove`\
-        \n**Usage : **dispproves the mentioned/replied person to PM.\
+        \n**Uso : **dispproves the mentioned/replied person to PM.\
         \n\n**Syntax : **`.block`\
-        \n**Usage : **Blocks the person.\
+        \n**Uso : **Blocks the person.\
         \n\n**Syntax : **`.unblock`\
-        \n**Usage : **unBlocks the person.\
+        \n**Uso : **unBlocks the person.\
         \n\n**Syntax : **`.listapproved`\
-        \n**Usage : **To list the all approved users.\
+        \n**Uso : **To list the all approved users.\
 "
     }
 )
