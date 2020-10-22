@@ -1,8 +1,8 @@
 
 # CAT USERBOT
 
-### The Easy Way to deploy the bot
-Get APP ID and API HASH from [HERE](https://my.telegram.org) and BOT TOKEN from [Bot Father](https://t.me/botfather) and then Generate stringsession by clicking on run.on.repl.it button below and then click on deploy to heroku . Before clicking on deploy to heroku just click on fork and star just below
+### A maneira fácil de implantar o bot
+Obtenha APP ID e API HASH de [AQUI] (https://my.telegram.org) e BOT TOKEN de [Bot Father] (https://t.me/botfather) e então gere stringsession clicando em run.on .repl.it abaixo e então clique em implantar no heroku. Antes de clicar em implantar no heroku, basta clicar no garfo e estrela logo abaixo
 
 [![Get string session](https://repl.it/badge/github/sandy1709/sandeep1709)](https://generatestringsession.sandeep1709.repl.run/)
 
@@ -21,15 +21,15 @@ Get APP ID and API HASH from [HERE](https://my.telegram.org) and BOT TOKEN from 
 [![catuserbot logo](https://telegra.ph/file/7e1e89621fabbf02596f8.jpg)](https://heroku.com/deploy?template=https://github.com/xmtscf/catuserbot)
 
 
-### Join [here](https://t.me/catuserbot17) for updates and tuts and [here](https://t.me/catuserbot_support) for discussion and bugs
+### Junte-se [aqui] (https://t.me/catuserbot17) para atualizações e tuts e [aqui] (https://t.me/catuserbot_support) para discussões e bugs
 
-### The Normal Way
+### O Caminho Normal
 
-An example `local_config.py` file could be:
+Um exemplo de arquivo `local_config.py` poderia ser:
 
-**Not All of the variables are mandatory**
+** Nem todas as variáveis **são obrigatórias**
 
-__The Userbot should work by setting only the first two variables__
+__O Userbot deve funcionar definindo apenas as duas primeiras variáveis__
 
 ```python3
 from heroku_config import Var
@@ -39,22 +39,22 @@ class Development(Var):
   API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 ```
 
-### UniBorg Configuration
+### Configuração UniBorg
 
 
 
-**Heroku Configuration**
-Simply just leave the Config as it is.
+** Configuração Heroku **
+Simplesmente deixe o Config como está.
 
-**Local Configuration**
+** Configuração Local **
 
-Fortunately there are no Mandatory vars for the UniBorg Support Config.
+Felizmente, não há vars obrigatórios para o UniBorg Support Config.
 
-## Mandatory Vars
+## Vars obrigatórias
 
-- Only two of the environment variables are mandatory.
-- This is because of `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
+- Apenas duas das variáveis de ambiente são obrigatórias.
+- Isso ocorre por causa de  `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
 
-    - `APP_ID`:   You can get this value from https://my.telegram.org
-    - `API_HASH`:   You can get this value from https://my.telegram.org
-- The userbot will not work without setting the mandatory vars.
+    - ʻAPP_ID`: você pode obter este valor em https://my.telegram.org
+    - ʻAPI_HASH`: Você pode obter este valor em https://my.telegram.org
+- O userbot não funcionará sem definir os vars obrigatórios.
