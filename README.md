@@ -19,40 +19,4 @@ Obtenha APP ID e API HASH de [AQUI] (https://my.telegram.org) e BOT TOKEN de [Bo
 
 
 
-### Junte-se [aqui] (https://t.me/catuserbot17) para atualizações e tuts e [aqui] (https://t.me/catuserbot_support) para discussões e bugs
-
-### O Caminho Normal
-
-Um exemplo de arquivo `local_config.py` poderia ser:
-
-** Nem todas as variáveis **são obrigatórias**
-
-__O Userbot deve funcionar definindo apenas as duas primeiras variáveis__
-
-```python3
-from heroku_config import Var
-
-class Development(Var):
-  APP_ID = 6
-  API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
-```
-
-### Configuração UniBorg
-
-
-
-** Configuração Heroku **
-Simplesmente deixe o Config como está.
-
-** Configuração Local **
-
-Felizmente, não há vars obrigatórios para o UniBorg Support Config.
-
-## Vars obrigatórias
-
-- Apenas duas das variáveis de ambiente são obrigatórias.
-- Isso ocorre por causa de  `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
-
-    - ʻAPP_ID`: você pode obter este valor em https://my.telegram.org
-    - ʻAPI_HASH`: Você pode obter este valor em https://my.telegram.org
-- O userbot não funcionará sem definir os vars obrigatórios.
+### Junte-se. (https://t.me/catuserbot17) para atualizações e tuts e (https://t.me/catuserbot_support) para discussões e bugs
