@@ -25,7 +25,7 @@ async def amireallyalive(alive):
     if CAT_IMG:
         cat_caption = f"**✮ FUNCIONANDO NORMALMENTE ✮**\n\n"
         cat_caption += f"**✧ Database :** `{check_sgnirts}`\n"
-        cat_caption += f"**✧ Versão do Teleton :** `{version.__version__}\n`"
+        cat_caption += f"**✧ Versão Telethon :** `{version.__version__}\n`"
         cat_caption += f"**✧ Versão Catuserbot :** `{catversion}`\n"
         cat_caption += f"**✧ Versão Python :** `{python_version()}\n`"
         cat_caption += f"**✧ Uptime :** `{uptime}\n`"
@@ -39,7 +39,7 @@ async def amireallyalive(alive):
             alive,
             f"**✮ FUNCIONANDO NORMALMENTE ✮**\n\n"
             f"**✧ Database :** `{check_sgnirts}`\n"
-            f"**✧ Telethon Version :** `{version.__version__}\n`"
+            f"**✧ Versão Telethon :** `{version.__version__}\n`"
             f"**✧ Versão Catuserbot :** `{catversion}`\n"
             f"**✧ Versão Python :** `{python_version()}\n`"
             f"**✧ Uptime :** `{uptime}\n`"
@@ -58,7 +58,7 @@ async def amireallyalive(alive):
         reply_to_id = await alive.get_reply_message()
     hmm = bot.uid
     cat_caption = f"**FUNCIONANDO NORMALMENTE**\n"
-    cat_caption += f"**  -Versão do Teleton :** `{version.__version__}\n`"
+    cat_caption += f"**  -Versão Telethon :** `{version.__version__}\n`"
     cat_caption += f"**  -Versão Catuserbot :** `{catversion}`\n"
     cat_caption += f"**  -Versão Python :** `{python_version()}\n`"
     cat_caption += f"**  -Dono:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
@@ -93,7 +93,7 @@ def check_data_base_heal_th():
         output = f"❌ {str(e)}"
         is_database_working = False
     else:
-        output = "Funcionando normalmente"
+        output = "OK"
         is_database_working = True
     return is_database_working, output
 
