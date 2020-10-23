@@ -57,7 +57,7 @@ async def amireallyalive(alive):
     if alive.reply_to_msg_id:
         reply_to_id = await alive.get_reply_message()
     hmm = bot.uid
-    cat_caption = f"**Funcionando Normalmente**\n"
+    cat_caption += f"**Funcionando Normalmente**\n"
     cat_caption += f"**  -Telethon :** `{version.__version__}\n`"
     cat_caption += f"**  -Catuserbot :** `{catversion}`\n"
     cat_caption += f"**  -Python :** `{python_version()}\n`"
