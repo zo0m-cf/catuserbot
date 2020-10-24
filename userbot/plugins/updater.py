@@ -203,7 +203,7 @@ async def upstream(event):
         return
     if changelog == "" and not force_update:
         await event.edit(
-            "\n`CATUSERBOT is`  **up-to-date**  `with`  "
+            "\n`CATUSERBOT está`  **ATUALIZADO**  `com`  "
             f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
@@ -211,7 +211,7 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            'do "[`.update now`] or [`.update deploy`]" to update.Check `.info updater` for details'
+            'Envie "[`.update now`] ou [`.update deploy`]" para atualizar. Cheque `.info updater` para detalhes'
         )
 
     if force_update:
