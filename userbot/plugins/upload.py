@@ -94,7 +94,7 @@ async def upload(path, event, udir_event):
     if os.path.isdir(path):
         await event.client.send_message(
             event.chat_id,
-            f"**Folder : **`{str(path)}`",
+            f"**Pasta : **`{str(path)}`",
         )
         Files = os.listdir(path)
         Files = sortthings(Files, path)
@@ -115,7 +115,7 @@ async def upload(path, event, udir_event):
                 force_document=False,
                 thumb=thumb,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, udir_event, c_time, "Uploading...", caption_rts)
+                    progress(d, t, udir_event, c_time, "Carregando...", caption_rts)
                 ),
             )
         else:
@@ -146,7 +146,7 @@ async def upload(path, event, udir_event):
                     )
                 ],
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, udir_event, c_time, "Uploading...", caption_rts)
+                    progress(d, t, udir_event, c_time, "Carregando...", caption_rts)
                 ),
             )
         uploaded += 1
@@ -162,29 +162,29 @@ async def uploadir(event):
     if not os.path.exists(path):
         await edit_or_reply(
             event,
-            f"`there is no such directory/file with the name {path} to upload`",
+            f"`não existe tal diretório/arquivo com o nome {path} para enviar`",
         )
         return
-    udir_event = await edit_or_reply(event, "Uploading....")
+    udir_event = await edit_or_reply(event, "Carregando....")
     if os.path.isdir(path):
         udir_event = await edit_or_reply(
-            event, f"`Gathering file details in directory {path}`"
+            event, f"`Coletando detalhes do arquivo no diretório {path}`"
         )
         uploaded = 0
         await upload(path, event, udir_event)
         end = datetime.now()
         ms = (end - start).seconds
         await udir_event.edit(
-            f"`Uploaded {uploaded} files successfully in {ms} seconds. `"
+            f"`Carregado {uploaded} arquivos com sucesso em {ms} segundos. `"
         )
     else:
-        udir_event = await edit_or_reply(event, f"`Uploading.....`")
+        udir_event = await edit_or_reply(event, f"`Carregando.....`")
         uploaded = 0
         await upload(path, event, udir_event)
         end = datetime.now()
         ms = (end - start).seconds
         await udir_event.edit(
-            f"`Uploaded file {str(path)} successfully in {ms} seconds. `"
+            f"`Carregado arquivo {str(path)} com sucesso em {ms} segundos. `"
         )
     await asyncio.sleep(5)
     await udir_event.delete()
@@ -196,7 +196,7 @@ async def uploadas(event):
     # For .uploadas command, allows you to specify some arguments for upload.
     type_of_upload = event.pattern_match.group(1)
     input_str = event.pattern_match.group(2)
-    uas_event = await edit_or_reply(event, "uploading.....")
+    uas_event = await edit_or_reply(event, "enviando.....")
     supports_streaming = False
     round_message = False
     spam_big_messages = False
@@ -249,7 +249,7 @@ async def uploadas(event):
                         )
                     ],
                     progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                        progress(d, t, uas_event, c_time, "Uploading...", file_name)
+                        progress(d, t, uas_event, c_time, "Carregando...", file_name)
                     ),
                 )
             elif round_message:
@@ -271,32 +271,32 @@ async def uploadas(event):
                         )
                     ],
                     progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                        progress(d, t, uas_event, c_time, "Uploading...", file_name)
+                        progress(d, t, uas_event, c_time, "Carregado...", file_name)
                     ),
                 )
             elif spam_big_messages:
-                await uas_event.edit("TBD: Not (yet) Implemented")
+                await uas_event.edit("TBD: Ainda não implementado")
                 return
             try:
                 os.remove(vthumb)
             except BaseException:
                 pass
-            await uas_event.edit("Uploaded successfully !!")
+            await uas_event.edit("Carregado com sucesso !!")
         except FileNotFoundError as err:
             await uas_event.edit(str(err))
     else:
-        await uas_event.edit("404: File Not Found")
+        await uas_event.edit("404: Arquivo não encontrado")
 
 
 CMD_HELP.update(
     {
         "upload": "**Plugin :** `upload`\
-    \n\n**Syntax :** `.upload path of file/folder`\
-    \n**Uso : **Uploads the file from the server or list of filesfrom that folder\
-    \n\n**Syntax : **`.uploadasstream path of video/audio`\
-    \n**Uso : **Uploads video/audio as streamable from the server\
-    \n\n**Syntax : **`.uploadasvn path of video`\
-    \n**Uso : **Uploads video/audio as round video from the server **Present supports few videos need to work onit takes some time to develop it **\
+    \n\n**Syntax :** `.upload caminho do arquivo/pasta`\
+    \n**Uso : **Carrega o arquivo do servidor ou lista de arquivos dessa pasta\
+    \n\n**Syntax : **`.uploadasstream caminho de vídeo/áudio`\
+    \n**Uso : **Carrega vídeo/áudio como reproduzível no servidor\
+    \n\n**Syntax : **`.uploadasvn caminho do vídeo`\
+    \n**Uso : **Carrega vídeo/áudio como vídeo redondo do servidor **O presente oferece suporte a poucos vídeos que precisam ser executados; leva algum tempo para desenvolvê-lo **\
     "
     }
 )

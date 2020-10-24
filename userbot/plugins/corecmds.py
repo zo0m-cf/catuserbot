@@ -73,10 +73,10 @@ async def send(event):
         ms = (end - start).seconds
         await event.delete()
         await caat.edit(
-            f"__**➥ Plugin Name:- {input_str} .**__\n__**➥ Uploaded in {ms} seconds.**__\n__**➥ Uploaded by :-**__ {DEFAULTUSER}"
+            f"__**➥ Plugin Name:- {input_str} .**__\n__**➥ Carregado in {ms} seconds.**__\n__**➥ Carregado by :-**__ {DEFAULTUSER}"
         )
     else:
-        await edit_or_reply(event, "404: File Not Found")
+        await edit_or_reply(event, "404: Arquivo não encontrado")
 
 
 @borg.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$", outgoing=True))

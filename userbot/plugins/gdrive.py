@@ -326,7 +326,7 @@ async def download(event, gdrive, service, uri=None):
                 end = datetime.now()
                 ms = (end - start).seconds
                 reply += (
-                    f"**File Uploaded in **`{ms} seconds`\n\n"
+                    f"**File Carregado in **`{ms} seconds`\n\n"
                     f"**➥ Size : **`{humanbytes(result[0])}`\n"
                     f"**➥ Link :** [{file_name}]({result[1]})\n"
                 )
@@ -554,7 +554,7 @@ async def upload(gdrive, service, file_path, file_name, mimeType):
         pass
     body = {
         "name": file_name,
-        "description": "Uploaded from Telegram using Catuserbot.",
+        "description": "Carregado from Telegram using Catuserbot.",
         "mimeType": mimeType,
     }
     try:
@@ -1119,7 +1119,7 @@ async def google_drive(gdrive):
     ms = (end - start).seconds
     if result:
         await gdrive.edit(
-            f"**File Uploaded in **`{ms} seconds`\n\n"
+            f"**File Carregado in **`{ms} seconds`\n\n"
             f"**➥ Size : **`{humanbytes(result[0])}`\n"
             f"**➥ Link :** [{file_name}]({result[1]})\n",
             link_preview=False,

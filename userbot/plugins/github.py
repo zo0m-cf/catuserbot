@@ -110,7 +110,7 @@ async def git_commit(file_name, mone):
         print(file_name)
         try:
             repo.create_file(
-                file_name, "Uploaded New Plugin", commit_data, branch="master"
+                file_name, "Carregado New Plugin", commit_data, branch="master"
             )
             print("Committed File")
             ccess = Var.GIT_REPO_NAME

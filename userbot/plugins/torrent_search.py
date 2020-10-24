@@ -132,7 +132,7 @@ async def _(event):
             + " \r\n"
         )
         message_text += " FILE SIZE: " + result["size"] + "\r\n"
-        # message_text += " Uploaded " + result["date"] + "\r\n"
+        # message_text += " Carregado " + result["date"] + "\r\n"
         message_text += (
             " SEEDS: " + result["seeds"] + " PEERS: " + result["peers"] + " \r\n"
         )

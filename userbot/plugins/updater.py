@@ -40,10 +40,10 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(event, ac_br, changelog):
     changelog_str = (
-        f"**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
+        f"**Novo UPDATE disponível para [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
     )
     if len(changelog_str) > 4096:
-        await event.edit("`Changelog is too big, view the file to see it.`")
+        await event.edit("`O registro de alterações é muito grande, visualize o arquivo para vê-lo.`")
         with open("output.txt", "w+") as file:
             file.write(changelog_str)
         await event.client.send_file(
@@ -84,8 +84,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         heroku_applications = heroku.apps()
         if HEROKU_APP_NAME is None:
             await event.edit(
-                "`[HEROKU]`\n`Please set up the` **HEROKU_APP_NAME** `variable"
-                " to be able to deploy your userbot...`"
+                "`[HEROKU]`\n`Por favor, configure o` **HEROKU_APP_NAME** `variable"
+                " para ser capaz de implantar seu userbot...`"
             )
             repo.__del__()
             return
@@ -95,11 +95,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n" "`Invalid Heroku credentials for deploying userbot dyno.`"
+                f"{txt}\n" "`Credenciais Heroku inválidas para implantação de userbot dyno.`"
             )
             return repo.__del__()
         await event.edit(
-            "`[HEROKU]`" "\n`Userbot dyno build in progress, please wait...`"
+            "`[HEROKU]`" "\n`Userbot dyno build in progress, por favor aguarde...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -114,19 +114,19 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         try:
             remote.push(refspec="HEAD:refs/heads/master", force=True)
         except Exception as error:
-            await event.edit(f"{txt}\n`Here is the error log:\n{error}`")
+            await event.edit(f"{txt}\n`Aqui está o log de erros:\n{error}`")
             return repo.__del__()
         build = app.builds(order_by="created_at", sort="desc")[0]
         if build.status == "failed":
             await event.edit(
-                "`Build failed!\n" "Cancelled or there were some errors...`"
+                "`Falha na construção!\n" "Cancelado ou ocorreram alguns erros...`"
             )
             await asyncio.sleep(5)
             return await event.delete()
-        await event.edit("`Successfully deployed!\n" "Restarting, please wait...`")
+        await event.edit("`Implantado com sucesso!\n" "Reiniciando, por favor aguarde...`")
     else:
         await event.edit(
-            "`[HEROKU]`\n" "`Please set up`  **HEROKU_API_KEY**  `variable...`"
+            "`[HEROKU]`\n" "`Por favor configure`  **HEROKU_API_KEY**  `variable...`"
         )
     return
 
@@ -138,7 +138,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-        "`Successfully Updated!\n" "Bot is restarting... Wait for a minute!`"
+        "`Atualizado com sucesso!\n" "O bot está reiniciando ... Espere um minuto!`"
     )
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
@@ -149,14 +149,14 @@ async def update(event, repo, ups_rem, ac_br):
 @bot.on(admin_cmd(outgoing=True, pattern=r"update($| (now|deploy))"))
 @borg.on(sudo_cmd(pattern="update($| (now|deploy))", allow_sudo=True))
 async def upstream(event):
-    "For .update command, check if the bot is up to date, update if specified"
+    "Para .update command, verifique se o bot está atualizado, atualize se especificado"
     conf = event.pattern_match.group(1).strip()
-    event = await edit_or_reply(event, "`Checking for updates, please wait....`")
+    event = await edit_or_reply(event, "`Verificando atualizações, por favor aguarde....`")
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Oops.. Updater cannot continue due to "
-        txt += "some problems occured`\n\n**LOGTRACE:**\n"
+        txt = "`Ops .. O atualizador não pode continuar devido a "
+        txt += "alguns problemas ocorreram`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
         await event.edit(f"{txt}\n`directory {error} is not found`")
@@ -235,8 +235,8 @@ async def upstream(event):
     except BaseException:
         pass
     try:
-        txt = "`Oops.. Updater cannot continue due to "
-        txt += "some problems occured`\n\n**LOGTRACE:**\n"
+        txt = "`Ops .. O atualizador não pode continuar devido a "
+        txt += "alguns problemas ocorreram`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
         await event.edit(f"{txt}\n`directory {error} is not found`")
