@@ -65,7 +65,7 @@ async def carbon_api(e):
     await asyncio.sleep(2)
     await cat.edit("`Done Dana Done...\n100%`")
     file = "./carbon.png"
-    await cat.edit("`Uploading..`")
+    await cat.edit("`Carrengando..`")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -146,7 +146,7 @@ async def carbon_api(e):
     ).get_attribute("value")
     await cat.edit("`Done Dana Done...\n100%`")
     file = "./carbon.png"
-    await cat.edit("`Uploading..`")
+    await cat.edit("`Carrengando..`")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -206,7 +206,7 @@ async def carbon_api(e):
     await asyncio.sleep(2)
     await cat.edit("🔳🔳🔳🔳🔳")
     file = "./carbon.png"
-    await cat.edit("☣️Karbon1 Completed, Uploading Karbon☣️")
+    await cat.edit("☣️Karbon1 Completed, Carrengando Karbon☣️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -263,7 +263,7 @@ async def carbon_api(e):
     await asyncio.sleep(2)  # Waiting for downloading
     await cat.edit("🔘🔘🔘🔘🔘")
     file = "./carbon.png"
-    await cat.edit("☣️Karbon2 Completed, Uploading Karbon☣️")
+    await cat.edit("☣️Karbon2 Completed, Carrengando Karbon☣️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -326,7 +326,7 @@ async def carbon_api(e):
 
     await cat.edit("🔵🔵🔵🔵🔵")
     file = "./carbon.png"
-    await cat.edit("☣️Karbon3 Completed, Uploading Karbon⬆️")
+    await cat.edit("☣️Karbon3 Completed, Carrengando Karbon⬆️")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -389,7 +389,7 @@ async def carbon_api(e):
 
     await cat.edit("🌝🌝🌝🌝🌝")
     file = "./carbon.png"
-    await cat.edit("✅Karbon4 Completed, Uploading Karbon✅")
+    await cat.edit("✅Karbon4 Completed, Carrengando Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -457,7 +457,7 @@ async def carbon_api(e):
 
     await cat.edit("⬛⬛⬛⬛⬛")
     file = "./carbon.png"
-    await cat.edit("✅RGB Karbon 2.0 Completed, Uploading Karbon✅")
+    await cat.edit("✅RGB Karbon 2.0 Completed, Carrengando Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,
@@ -554,7 +554,7 @@ async def carbon_api(e):
     await asyncio.sleep(2)  # Waiting for downloading
     await cat.edit("⬛⬛⬛⬛⬛")
     file = "./carbon.png"
-    await cat.edit("✅RGB Karbon Completed, Uploading Karbon✅")
+    await cat.edit("✅RGB Karbon Completed, Carrengando Karbon✅")
     await e.client.send_file(
         e.chat_id,
         file,

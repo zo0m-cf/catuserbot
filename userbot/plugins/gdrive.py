@@ -326,8 +326,8 @@ async def download(event, gdrive, service, uri=None):
                 end = datetime.now()
                 ms = (end - start).seconds
                 reply += (
-                    f"**File Carregado in **`{ms} seconds`\n\n"
-                    f"**➥ Size : **`{humanbytes(result[0])}`\n"
+                    f"**Arquivo Carregado em **`{ms} segundos`\n\n"
+                    f"**➥ Tamanho : **`{humanbytes(result[0])}`\n"
                     f"**➥ Link :** [{file_name}]({result[1]})\n"
                 )
                 return reply
@@ -591,13 +591,13 @@ async def upload(gdrive, service, file_path, file_name, mimeType):
             percentage = uploaded / file_size * 100
             speed = round(uploaded / diff, 2)
             eta = round((file_size - uploaded) / speed)
-            prog_str = "`Uploading :`\n`[{0}{1}] {2}`".format(
+            prog_str = "`Carrengando :`\n`[{0}{1}] {2}`".format(
                 "".join(["▰" for i in range(math.floor(percentage / 10))]),
                 "".join(["▱" for i in range(10 - math.floor(percentage / 10))]),
                 round(percentage, 2),
             )
             current_message = (
-                "**Uploading **\n\n"
+                "**Carrengando **\n\n"
                 f"**Name : **`{file_name}`\n"
                 f"**Status : **\n{prog_str}\n"
                 f"`{humanbytes(uploaded)} of {humanbytes(file_size)} "
@@ -970,7 +970,7 @@ async def google_drive(gdrive):
         return None
     service = await create_app(gdrive)
     event = gdrive
-    gdrive = await edit_or_reply(gdrive, "Uploading...")
+    gdrive = await edit_or_reply(gdrive, "Carrengando...")
     if service is False:
         return None
     if isfile(value):

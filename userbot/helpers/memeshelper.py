@@ -83,7 +83,7 @@ INSULT_STRINGS = [
     "Try jumping from a hundred story building but you can do it only once.",
     "Try playing catch and throw with RDX its fun.",
     "Try provoking a tiger while you both are in a cage.",
-    "Try this: if you hold your breath underwater for an hour, you can then hold it forever.",
+    "Try this: if you hold your breath underwater for an hora, you can then hold it forever.",
     "Try to spend one day in a coffin and it will be yours forever.",
     "Volunteer for target in an firing range.",
     "What language are you speaking? Cause it sounds like bullshit.",

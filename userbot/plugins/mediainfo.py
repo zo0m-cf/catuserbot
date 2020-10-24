@@ -43,7 +43,7 @@ async def file_data(reply):
     if reply.file.performer:
         hmm += f"Performer  :  {reply.file.performer}<br>"
     if reply.file.duration:
-        hmm += f"Duration  :  {reply.file.duration} seconds<br>"
+        hmm += f"Duração  :  {reply.file.duration} seconds<br>"
     if reply.file.height:
         hmm += f"Height :  {reply.file.height}<br>"
     if reply.file.width:

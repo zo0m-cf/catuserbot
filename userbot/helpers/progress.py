@@ -50,9 +50,9 @@ def time_formatter(seconds: int) -> str:
     days, hours = divmod(hours, 24)
     tmp = (
         ((str(days) + " day(s), ") if days else "")
-        + ((str(hours) + " hour(s), ") if hours else "")
-        + ((str(minutes) + " minute(s), ") if minutes else "")
-        + ((str(seconds) + " second(s), ") if seconds else "")
+        + ((str(hours) + " hora(s), ") if hours else "")
+        + ((str(minutes) + " minuto(s), ") if minutes else "")
+        + ((str(seconds) + " segundo(s), ") if seconds else "")
     )
     return tmp[:-2]
 
@@ -88,11 +88,11 @@ async def progress(
         elapsed_time = round(diff)
         eta = round((total - current) / speed)
         if "upload" in prog_type.lower():
-            status = "Uploading"
+            status = "Carrengando"
         elif "download" in prog_type.lower():
             status = "Downloading"
         else:
-            status = "Unknown"
+            status = "Processando"
         progress_str = "`{0}` | [{1}{2}] `{3}%`".format(
             status,
             "".join(["▰" for i in range(math.floor(percentage / 10))]),
@@ -104,7 +104,7 @@ async def progress(
             f"`{humanbytes(current)} of {humanbytes(total)}"
             f" @ {humanbytes(speed)}`\n"
             f"**ETA :**` {time_formatter(eta)}`\n"
-            f"**Duration :** `{time_formatter(elapsed_time)}`"
+            f"**Duração :** `{time_formatter(elapsed_time)}`"
         )
         if file_name:
             await gdrive.edit(

@@ -68,7 +68,7 @@ async def _(event):
         )
     if x == 12:
         await event.edit(
-            "🎶 I'll stop time for you \n The second you say you'd like me to \n I just wanna give you the loving that you're missing \n Baby, just to wake up with you \n Would be everything I need and this could be so different \n Tell me what you want to do \n \n 'Cause I know I can treat you better \n Than he can \n And any girl like you deserves a gentleman 🎶 **-Treat You Better**"
+            "🎶 I'll stop time for you \n The segundo you say you'd like me to \n I just wanna give you the loving that you're missing \n Baby, just to wake up with you \n Would be everything I need and this could be so different \n Tell me what you want to do \n \n 'Cause I know I can treat you better \n Than he can \n And any girl like you deserves a gentleman 🎶 **-Treat You Better**"
         )
     if x == 13:
         await event.edit(
@@ -544,7 +544,7 @@ async def _(event):
         )
     if x == 29:
         await event.edit(
-            "[When your friends cancel on the plan you made at the last minute...](https://telegra.ph/file/960b58c8f625b17613307.jpg)",
+            "[When your friends cancel on the plan you made at the last minuto...](https://telegra.ph/file/960b58c8f625b17613307.jpg)",
             link_preview=True,
         )
     if x == 30:
@@ -747,7 +747,7 @@ async def _(event):
             '`"No one actually teaches you how to ride a bicycle. They just hype you up until you work it out."`'
         )
     if x == 49:
-        await event.edit('`"Ask yourself why the the brain ignores the second the."`')
+        await event.edit('`"Ask yourself why the the brain ignores the segundo the."`')
     if x == 50:
         await event.edit(
             '`"You’ve probably forgot about 80% of your entire life and most of the memories you do remember are not very accurate to what actually happened."`'
@@ -791,10 +791,10 @@ async def _(event):
             '`"Theme park employees must be good at telling the difference between screams of horror and excitement."`'
         )
     if x == 61:
-        await event.edit('`"6 to 6:30 feels more half-an-hour than 5:50 to 6:20"`')
+        await event.edit('`"6 to 6:30 feels more half-an-hora than 5:50 to 6:20"`')
     if x == 62:
         await event.edit(
-            '`"Getting your password right on the last login attempt before lockout is the closest thing to disarming a bomb at the last minute that most of us will experience."`'
+            '`"Getting your password right on the last login attempt before lockout is the closest thing to disarming a bomb at the last minuto that most of us will experience."`'
         )
     if x == 63:
         await event.edit(
@@ -932,7 +932,7 @@ async def _(event):
         )
     if x == 100:
         await event.edit(
-            '`"These words spake Jesus, and lifted up his eyes to heaven, and said, Father, the hour is come; glorify thy Son, that thy Son also may glorify thee:  <John 17:1>."`'
+            '`"These words spake Jesus, and lifted up his eyes to heaven, and said, Father, the hora is come; glorify thy Son, that thy Son also may glorify thee:  <John 17:1>."`'
         )
     if x == 101:
         await event.edit(
@@ -1755,7 +1755,7 @@ async def _(event):
 
     if x == 49:
 
-        await event.edit('`"Ask yourself why the the brain ignores the second the."`')
+        await event.edit('`"Ask yourself why the the brain ignores the segundo the."`')
 
     if x == 50:
 
@@ -1823,12 +1823,12 @@ async def _(event):
 
     if x == 61:
 
-        await event.edit('`"6 to 6:30 feels more half-an-hour than 5:50 to 6:20"`')
+        await event.edit('`"6 to 6:30 feels more half-an-hora than 5:50 to 6:20"`')
 
     if x == 62:
 
         await event.edit(
-            '`"Getting your password right on the last login attempt before lockout is the closest thing to disarming a bomb at the last minute that most of us will experience."`'
+            '`"Getting your password right on the last login attempt before lockout is the closest thing to disarming a bomb at the last minuto that most of us will experience."`'
         )
 
     if x == 63:

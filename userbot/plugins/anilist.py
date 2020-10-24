@@ -186,7 +186,7 @@ async def formatJSON(outData):
     msg += f"\n**Episode** : {jsonData['episodes']}"
     msg += f"\n**Year** : {jsonData['startDate']['year']}"
     msg += f"\n**Score** : {jsonData['averageScore']}"
-    msg += f"\n**Duration** : {jsonData['duration']} min\n\n"
+    msg += f"\n**Duração** : {jsonData['duration']} min\n\n"
     # https://t.me/catuserbot_support/19496
     cat = f"{jsonData['description']}"
     msg += " __" + re.sub("<br>", "\n", cat) + "__"

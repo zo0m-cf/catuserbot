@@ -39,7 +39,7 @@ def doit(chat_id, match, original):
         elif f == "g":
             count = 0
         else:
-            return None, f"Unknown flag: {f}"
+            return None, f"Flag desconhecida: {f}"
 
     def actually_doit(original):
         try:
