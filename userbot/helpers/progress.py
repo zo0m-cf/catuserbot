@@ -45,11 +45,11 @@ def humanbytes(size: int) -> str:
 
 
 def time_formatter(seconds: int) -> str:
-    minutes, seconds = divmod(seconds, 60)
-    hours, minutes = divmod(minutes, 60)
-    days, hours = divmod(hours, 24)
+    minutos, segundos = divmod(seconds, 60)
+    horas, minutos = divmod(minutes, 60)
+    dias, horas = divmod(hours, 24)
     tmp = (
-        ((str(days) + " day(s), ") if days else "")
+        ((str(days) + " dia(s), ") if days else "")
         + ((str(hours) + " hora(s), ") if hours else "")
         + ((str(minutes) + " minuto(s), ") if minutes else "")
         + ((str(seconds) + " segundo(s), ") if seconds else "")
