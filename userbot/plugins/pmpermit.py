@@ -13,7 +13,7 @@ PREV_REPLY_MESSAGE = {}
 CACHE = {}
 PMPERMIT_PIC = Config.PMPERMIT_PIC
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
-USER_BOT_WARN_ZERO = "Você estava enviando spam para a caixa de entrada do meu mestre, agora você está bloqueado pelo userbot do meu mestre. **Agora GTFO, estou jogando minecraft** "
+USER_BOT_WARN_ZERO = "**Você estava enviando spam e foi bloqueado automaticamente.** "
 
 if Var.PRIVATE_GROUP_ID is not None:
 
@@ -36,7 +36,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     PM_START.remove(chat.id)
                 pmpermit_sql.approve(chat.id, reason)
                 await event.edit(
-                    "Aprovado para pm [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Aprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
@@ -62,7 +62,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     PM_START.remove(chat)
                 pmpermit_sql.approve(chat, reason)
                 await event.edit(
-                    "Aprovado para pm [{}](tg://user?id={})".format(firstname, chat)
+                    "Aprovado para PM [{}](tg://user?id={})".format(firstname, chat)
                 )
             else:
                 await event.edit(
@@ -101,7 +101,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit(
-                    "reprovado para pm [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Reprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
@@ -119,7 +119,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit(
-                    "reprovado para pm [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Reprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
@@ -214,9 +214,8 @@ if Var.PRIVATE_GROUP_ID is not None:
         chat_id = event.from_id
         USER_BOT_NO_WARN = (
             f"[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id={chat_id})\n\n"
-            f"Meu mestre {DEFAULTUSER} não te aprovou ainda. Não envie spam para sua caixa de entrada "
-            "Deixe seu nome, motivo e $ 10k e, com sorte, você receberá uma resposta em 2 anos-luz.\n\n"
-            "**Envie** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
+            f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
+            "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
         )
         if USER_BOT_NO_WARN == message_text:
             # userbot's should not reply to other userbot's
@@ -274,13 +273,12 @@ if Var.PRIVATE_GROUP_ID is not None:
                 USER_BOT_NO_WARN = (
                     Config.CUSTOM_PMPERMIT_TEXT
                     + "\n\n"
-                    + "**Send** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
+                    + "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
                 )
             else:
                 USER_BOT_NO_WARN = (
-                    f"Meu mestre {DEFAULTUSER} não te aprovou ainda. Não envie spam para sua caixa de entrada "
-                    "Deixe seu nome, motivo e $ 10k e, com sorte, você receberá uma resposta em 2 anos-luz.\n\n"
-                    "**Send** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
+                f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
+                "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
                 )
             r = await event.reply(USER_BOT_NO_WARN, file=PMPERMIT_PIC)
         else:
@@ -288,14 +286,13 @@ if Var.PRIVATE_GROUP_ID is not None:
                 USER_BOT_NO_WARN = (
                     Config.CUSTOM_PMPERMIT_TEXT
                     + "\n\n"
-                    + "**Send** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
+                    + "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
                 )
             else:
                 USER_BOT_NO_WARN = (
                     f"[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id={catid})\n\n"
-                    f"Meu mestre {DEFAULTUSER} não te aprovou ainda. Não envie spam para sua caixa de entrada "
-                    "Deixe seu nome, motivo e $ 10k e, com sorte, você receberá uma resposta em 2 anos-luz.\n\n"
-                    "**Send** `/start` ** para que meu mestre possa decidir por que você está aqui.**"
+                f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
+                "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
                 )
             r = await event.reply(USER_BOT_NO_WARN)
         PM_WARNS[chat_id] += 1
