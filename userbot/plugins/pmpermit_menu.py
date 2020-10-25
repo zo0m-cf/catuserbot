@@ -28,24 +28,24 @@ async def _(event):
         if not event.is_private:
             return
         PM = (
-            "Hello. You are accessing the availabe menu of my master, "
+            "Olá. Você está acessando o menu de solicitação de contato., "
             f"{DEFAULTUSER}.\n"
-            "__Let's make this smooth and let me know why you are here.__\n"
-            "**Choose one of the following reasons why you are here:**\n\n"
-            "`a`. To chat with my master\n"
-            "`b`. To spam my master's inbox.\n"
-            "`c`. To enquire something\n"
-            "`d`. To request something\n"
+            "__Agora você pode me dizer porque está aqui.__\n"
+            "**Escolha um dos seguintes motivos pelos quais você está aqui:**\n\n"
+            "`a`. Para conversar comigo\n"
+            "`b`. Para fazer spam = AUTOBLOCK.\n"
+            "`c`. Para perguntar algo\n"
+            "`d`. Para pedir algo\n"
         )
         ONE = (
-            "__Okay. Your request has been registered. Do not spam my master's inbox.You can expect a reply within 24 light years. He is a busy man, unlike you probably.__\n\n"
-            "**⚠️ You will be blocked and reported if you spam nibba. ⚠️**\n\n"
-            "__Use__ `/start` __to go back to the main menu.__"
+            "__OK. Sua solicitação foi registrada. Não envie spam para minha caixa de entrada. Você receberá uma resposta em até 24 horas.__\n\n"
+            "**⚠️ Você será bloqueado e denunciado se enviar spam. ⚠️**\n\n"
+            "__Use__ `/start` __para voltar ao menu principal.__"
         )
-        TWO = " `███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ `\n\n**So uncool, this is not your home. Go bother someone else. You have been blocked and reported until further notice.**"
-        THREE = "__Okay. Meu mestre has not seen your message yet.He usually responds to people,though idk about retarted ones.__\n __He'll respond when he comes back, if he wants to.There's already a lot of pending messages😶__\n **Please do not spam unless you wish to be blocked and reported.**"
-        FOUR = "`Okay. please have the basic manners as to not bother my master too much. If he wishes to help you, he will respond to you soon.`\n**Do not ask repeatdly else you will be blocked and reported.**"
-        LWARN = "**This is your last warning. DO NOT send another message else you will be blocked and reported. Keep patience. Meu mestre will respond you ASAP.**\n__Use__ `/start` __to go back to the main menu.__"
+        TWO = "**OK, Como você já deve imaginar SPAM=AUTOBLOCK.**"
+        THREE = "__OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer sua pergunta.__\n **Por favor, não envie spam a menos que você queira ser bloqueado e denunciado.**"
+        FOUR = "`OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer seu pedido.`\n**Não pergunte repetidamente, senão você será bloqueado e denunciado.**"
+        LWARN = "**Este é o seu último aviso. NÃO envie outra mensagem, senão você será bloqueado e denunciado. Mantenha a paciência. Irei te responder o mais rápido possível.**\n__Use__ `/start` __para voltar ao menu principal.__"
         try:
             async with event.client.conversation(chat) as conv:
                 if pmpermit_sql.is_approved(chat_id):
@@ -118,7 +118,7 @@ async def _(event):
                         return
                     await event.client.send_message(
                         chat,
-                        "You have entered an invalid command. Please send `/start` again or do not send another message if you do not wish to be blocked and reported.",
+                        "Você digitou um comando inválido. Por favor envie `/start` novamente ou não envie outra mensagem se você não deseja ser bloqueado e denunciado.",
                     )
                     response = await conv.get_response(chat)
                     z = response.text
