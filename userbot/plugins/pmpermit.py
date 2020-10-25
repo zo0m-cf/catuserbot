@@ -139,7 +139,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if chat.id in PM_START:
                 PM_START.remove(chat.id)
             await event.edit(
-                " ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nVocê foi bloqueado. Agora você não pode me enviar mensagens..[{}](tg://user?id={})".format(
+                " Você foi bloqueado. Agora você não pode me enviar mensagens..[{}](tg://user?id={})".format(
                     firstname, chat.id
                 )
             )
@@ -152,7 +152,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if chat.id in PM_START:
                 PM_START.remove(chat.id)
             await event.edit(
-                " ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\nVocê foi bloqueado. Agora você não pode me enviar mensagens..[{}](tg://user?id={})".format(
+                " Você foi bloqueado. Agora você não pode me enviar mensagens..[{}](tg://user?id={})".format(
                     firstname, chat.id
                 )
             )
@@ -213,7 +213,6 @@ if Var.PRIVATE_GROUP_ID is not None:
         message_text = event.message.message
         chat_id = event.from_id
         USER_BOT_NO_WARN = (
-            f"[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id={chat_id})\n\n"
             f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
             "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
         )
@@ -290,8 +289,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 )
             else:
                 USER_BOT_NO_WARN = (
-                    f"[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id={catid})\n\n"
-                f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
+                    f"Você ainda não foi aprovado para enviar mensagens pessoais. \n"
                 "**Envie** `/start` ** e escolha a opção que mais se identifica com seu contato.**"
                 )
             r = await event.reply(USER_BOT_NO_WARN)
