@@ -78,9 +78,9 @@ async def on_afk(event):
         msg = None
         message_to_reply = (
             f"__Modo AFK Ativado.__ "
-            + f"\n\n__Retorno sua mensagem assim que possível.__\n**MOTIVO**: {reason}"
+            + f"\n\n__Retorno assim que possível.__\n**MOTIVO**: {reason}"
             if reason
-            else f"**Ei!**\n**No momento estou indisponível.**  "
+            else f"**Ei! No momento estou indisponível.**\n__Retorno assim que possível.__  "
         )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
