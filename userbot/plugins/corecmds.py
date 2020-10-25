@@ -73,7 +73,7 @@ async def send(event):
         ms = (end - start).seconds
         await event.delete()
         await caat.edit(
-            f"__**➥ Plugin Name:- {input_str} .**__\n__**➥ Carregado in {ms} seconds.**__\n__**➥ Carregado by :-**__ {DEFAULTUSER}"
+            f"__**➥ Nome do Plugin:- {input_str} .**__\n__**➥ Carregado em {ms} segundos.**__\n__**➥ Carregado por :-**__ {DEFAULTUSER}"
         )
     else:
         await edit_or_reply(event, "404: Arquivo não encontrado")

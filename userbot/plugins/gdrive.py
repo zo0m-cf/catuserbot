@@ -1119,8 +1119,8 @@ async def google_drive(gdrive):
     ms = (end - start).seconds
     if result:
         await gdrive.edit(
-            f"**File Carregado in **`{ms} seconds`\n\n"
-            f"**➥ Size : **`{humanbytes(result[0])}`\n"
+            f"**Arquivo Carregado em **`{ms} segundos`\n\n"
+            f"**➥ Tamanho : **`{humanbytes(result[0])}`\n"
             f"**➥ Link :** [{file_name}]({result[1]})\n",
             link_preview=False,
         )
