@@ -38,14 +38,14 @@ async def _(event):
             "`d`. Para pedir algo\n"
         )
         ONE = (
-            "__OK. Sua solicitação foi registrada. Não envie spam para minha caixa de entrada. Você receberá uma resposta em até 24 horas.__\n\n"
-            "**⚠️ Você será bloqueado e denunciado se enviar spam. ⚠️**\n\n"
+            "__OK. Sua solicitação foi registrada. Em breve será aprovado e poderá conversar comigo.__\n\n"
+            "**⚠️ Por favor não envie SPAM. ⚠️**\n\n"
             "__Use__ `/start` __para voltar ao menu principal.__"
         )
         TWO = "**OK, Como você já deve imaginar SPAM=AUTOBLOCK.**"
-        THREE = "__OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer sua pergunta.__\n **Por favor, não envie spam a menos que você queira ser bloqueado e denunciado.**"
-        FOUR = "`OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer seu pedido.`\n**Não pergunte repetidamente, senão você será bloqueado e denunciado.**"
-        LWARN = "**Este é o seu último aviso. NÃO envie outra mensagem, senão você será bloqueado e denunciado. Mantenha a paciência. Irei te responder o mais rápido possível.**\n__Use__ `/start` __para voltar ao menu principal.__"
+        THREE = "OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer sua pergunta.\n **Não pergunte repetidamente, senão você será bloqueado e denunciado.**"
+        FOUR = "OK. Sua solicitação foi registrada. Em breve será aprovado e poderá fazer seu pedido.\n**Não faça pedidos repetidamente, senão você será bloqueado e denunciado.**"
+        LWARN = "**Este é o seu último aviso. NÃO envie outra mensagem, aguarde aprovação, senão você será bloqueado e denunciado pelo sistema automaticamente.**\n__Use__ `/start` __para voltar ao menu principal.__"
         try:
             async with event.client.conversation(chat) as conv:
                 if pmpermit_sql.is_approved(chat_id):
