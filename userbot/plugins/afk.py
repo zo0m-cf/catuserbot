@@ -78,7 +78,7 @@ async def on_afk(event):
         msg = None
         message_to_reply = (
             f"__Modo AFK Ativado.__ "
-            + f"\n\n__Retorno assim que possível.__\n**MOTIVO**: {reason}"
+            + f"\n__Retorno assim que possível.__\n**MOTIVO**: {reason}"
             if reason
             else f"**Ei! No momento estou indisponível.**\n__Retorno assim que possível.__  "
         )
