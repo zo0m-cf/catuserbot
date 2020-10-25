@@ -61,7 +61,7 @@ async def tmuter(catty):
             await catevent.edit(
                 f"{user.first_name} was muted in {catty.chat.title}\n"
                 f"**Mutted for : **{cattime}\n"
-                f"**Reason : **__{reason}__"
+                f"**Razão : **__{reason}__"
             )
             if BOTLOG:
                 await catty.client.send_message(
@@ -70,7 +70,7 @@ async def tmuter(catty):
                     f"**User : **[{user.first_name}](tg://user?id={user.id})\n"
                     f"**Chat : **{catty.chat.title}(`{catty.chat_id}`)\n"
                     f"**Mutted for : **`{cattime}`\n"
-                    f"**Reason : **`{reason}``",
+                    f"**Razão : **`{reason}``",
                 )
         else:
             await catevent.edit(
@@ -152,7 +152,7 @@ async def ban(catty):
         await catevent.edit(
             f"{user.first_name} was banned in {catty.chat.title}\n"
             f"banned for {cattime}\n"
-            f"Reason:`{reason}`"
+            f"Razão:`{reason}`"
         )
         if BOTLOG:
             await catty.client.send_message(
@@ -161,7 +161,7 @@ async def ban(catty):
                 f"**User : **[{user.first_name}](tg://user?id={user.id})\n"
                 f"**Chat : **{catty.chat.title}(`{catty.chat_id}`)\n"
                 f"**Banned untill : **`{cattime}`\n"
-                f"**Reason : **__{reason}__",
+                f"**Razão : **__{reason}__",
             )
     else:
         await catevent.edit(

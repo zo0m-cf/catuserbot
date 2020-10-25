@@ -419,7 +419,7 @@ async def gbun(event):
                 jnl += "**Victim Nigga's username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
                 gbunm = "`{}`".format(gbunVar)
-                gbunr = "**Reason: **" + gbunm
+                gbunr = "**Razão: **" + gbunm
                 jnl += gbunr
             else:
                 no_reason = "__Reason: Potential spammer. __"

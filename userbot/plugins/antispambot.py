@@ -89,7 +89,7 @@ if Config.ANTISPAMBOT_BAN:
                 "#ANTISPAMBOT\n"
                 f"**User :** [{user.first_name}](tg://user?id={user.id})\n"
                 f"**Chat :** {event.chat.title} (`{event.chat_id}`)\n"
-                f"**Reason :** {hmm.text}",
+                f"**Razão :** {hmm.text}",
             )
 
 

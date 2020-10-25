@@ -43,8 +43,8 @@ async def set_not_afk(event):
         if BOTLOG:
             await borg.send_message(
                 BOTLOG_CHATID,
-                "#AFKFALSE \nDefina o modo AFK para False\n"
-                + "__Estou de volta!__\n**Não estou mais AFK.**\n `Fiquei AFK por:``"
+                "#AFKFALSE \nModo AFK desativado!\n"
+                + "__Estou de volta!__\n**Modo AFK desativado.**\n `Fiquei em AFK por:``"
                 + total_afk_time
                 + "`",
             )
@@ -77,10 +77,10 @@ async def on_afk(event):
     if USERAFK_ON and not (await event.get_sender()).bot:
         msg = None
         message_to_reply = (
-            f"__Meu Dono Está em Afk Por__ `{total_afk_time}`\nOnde ele está: SÓ DEUS SABE "
-            + f"\n\n__Eu prometo que ele voltará em alguns anos-luz__\n**MOTIVO**: {reason}"
+            f"__Modo AFK Ativado.__ "
+            + f"\n\n__Retorno sua mensagem assim que possivel.__\n**MOTIVO**: {reason}"
             if reason
-            else f"**Ei!**\n__No momento estou indisponível. Desde quando, você pergunta? Por {total_afk_time} Eu acho.__\n\nQuando estarei de volta? Em breve __Quando eu tiver vontade__**( ಠ ʖ̯ ಠ)**  "
+            else f"**Ei!**\n__No momento estou indisponível.  "
         )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
@@ -127,23 +127,23 @@ async def _(event):
         USERAFK_ON = f"on: {reason}"
         if reason:
             await borg.send_message(
-                event.chat_id, f"**Eu estarei indo embora!** __motivo ~ {reason}__"
+                event.chat_id, f"**Tô saindo!** __motivo ~ {reason}__"
             )
         else:
-            await borg.send_message(event.chat_id, f"**Estou indo afk!**")
+            await borg.send_message(event.chat_id, f"**Ativando afk!**")
         await asyncio.sleep(5)
         await event.delete()
         if BOTLOG:
             await borg.send_message(
                 BOTLOG_CHATID,
-                f"#AFKTRUE \nDefina o modo AFK como Verdadeiro e a Razão será {reason}",
+                f"#AFKTRUE \nModo AFK Ativado e a Razão é {reason}",
             )
 
 
 CMD_HELP.update(
     {
         "afk": "**Plugin : **`afk`\
-        \n\n**Syntax : **`.afk [Optional Reason]`\
+        \n\n**Syntax : **`.afk [Optional Razão]`\
 \n**Uso : **Define você como afk.\nRespostas para quem marca/PM's \
 você dizendo a eles que você está AFK(motivo).\n\nDesliga o AFK quando você digita qualquer coisa, em qualquer lugar.\
 \nafk significa longe do teclado.\

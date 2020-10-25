@@ -131,7 +131,7 @@ async def generate_credentials(gdrive):
                 gdrive,
                 "**AUTHENTICATE - ERROR**\n\n"
                 "**Status : **`BAD`\n"
-                "**Reason : **`G_DRIVE_DATA entity is not valid!`",
+                "**Razão : **`G_DRIVE_DATA entity is not valid!`",
             )
             return False
     else:
@@ -141,7 +141,7 @@ async def generate_credentials(gdrive):
                 gdrive,
                 "**AUTHENTICATE - ERROR**\n\n"
                 "**Status : **`BAD`\n"
-                "**Reason : **`please get your G_DRIVE_DATA`",
+                "**Razão : **`please get your G_DRIVE_DATA`",
             )
             return False
         configs = {
@@ -298,7 +298,7 @@ async def download(event, gdrive, service, uri=None):
             os.remove(newest)
             reply += (
                 "**FILE - CANCELLED**\n\n"
-                "**Status : **`OK - received signal cancelled.`"
+                "**Status : **`OK - sinal recebido cancelado.`"
             )
             return reply
         else:
@@ -319,7 +319,7 @@ async def download(event, gdrive, service, uri=None):
             except CancelProcess:
                 reply += (
                     "**[FILE - CANCELLED]**\n\n"
-                    "**Status : **`OK - received signal cancelled.`"
+                    "**Status : **`OK - sinal recebido cancelado.`"
                 )
                 return reply
             else:
@@ -342,7 +342,7 @@ async def download(event, gdrive, service, uri=None):
             except CancelProcess:
                 reply += (
                     "**[FOLDER - CANCELLED]**\n\n"
-                    "**Status : **`OK - received signal cancelled.`"
+                    "**Status : **`OK - sinal recebido cancelado.`"
                 )
                 await reset_parentId()
                 return reply
@@ -352,14 +352,14 @@ async def download(event, gdrive, service, uri=None):
                 reply += (
                     f"**{status}**\n\n"
                     f"[{file_name}]({webViewURL})\n"
-                    "**Status : **`OK - Successfully uploaded.`\n\n"
+                    "**Status : **`OK - Carregado com sucesso.`\n\n"
                 )
                 await reset_parentId()
                 return reply
     except Exception as e:
         status = status.replace("DOWNLOAD]", "ERROR]")
         reply += (
-            f"**{status}**\n\n" "**Status : **`failed`\n" f"**Reason : **`{str(e)}`\n\n"
+            f"**{status}**\n\n" "**Status : **`failed`\n" f"**Razão : **`{str(e)}`\n\n"
         )
         return reply
     return
@@ -662,7 +662,7 @@ async def lists(gdrive):
                 gdrive,
                 "**GDRIVE - LIST**\n\n"
                 "**Status : **`BAD`\n"
-                "**Reason : **`can't get list if limit more than 1000.`",
+                "**Razão : **`can't get list if limit more than 1000.`",
             )
             return
     else:
@@ -725,7 +725,7 @@ async def lists(gdrive):
                 gdrive,
                 "**[GDRIVE - LIST]**\n\n"
                 "**Status : **`BAD`\n"
-                f"**Reason : **`{str(e)}`",
+                f"**Razão : **`{str(e)}`",
             )
             return
         for files in response.get("files", []):
@@ -785,7 +785,7 @@ async def google_drive_managers(gdrive):
     """ - Split name if contains spaces by using ; - """
     f_name = gdrive.pattern_match.group(2).split(";")
     exe = gdrive.pattern_match.group(1)
-    gdrive = await edit_or_reply(gdrive, "`Sending information...`")
+    gdrive = await edit_or_reply(gdrive, "`Enviando informações...`")
     reply = ""
     for name_or_id in f_name:
         """ - in case given name has a space beetween ; - """
@@ -845,7 +845,7 @@ async def google_drive_managers(gdrive):
                 await change_permission(service, folder_id)
             reply += (
                 f"**{status}**\n\n"
-                f"**Folder Name : **`{name_or_id}`\n"
+                f"**Nome da pasta : **`{name_or_id}`\n"
                 f"**ID  :** `{folder_id}`\n"
                 f"**URL :** [Open]({webViewURL})\n\n"
             )
@@ -864,7 +864,7 @@ async def google_drive_managers(gdrive):
                     reply += (
                         f"**[FILE/FOLDER - ERROR]**\n\n"
                         "**Status : **`BAD`\n"
-                        f"**Reason : **`{str(e)}`\n"
+                        f"**Razão : **`{str(e)}`\n"
                     )
                     continue
             name = f.get("name")
@@ -880,7 +880,7 @@ async def google_drive_managers(gdrive):
                 reply += (
                     f"**{status}**\n\n"
                     "**Status : **`BAD`\n"
-                    f"**Reason : **`{str(e)}`\n\n"
+                    f"**Razão : **`{str(e)}`\n\n"
                 )
                 continue
             else:
@@ -900,7 +900,7 @@ async def google_drive_managers(gdrive):
                     reply += (
                         "**FILE/FOLDER - ERROR**\n\n"
                         "**Status : **`BAD`\n"
-                        f"**Reason : **`{str(e)}`\n\n"
+                        f"**Razão : **`{str(e)}`\n\n"
                     )
                     continue
             """ - If exists parse file/folder information - """
@@ -965,7 +965,7 @@ async def google_drive(gdrive):
             gdrive,
             "**[UNKNOWN - ERROR]\n\n"
             "**Status : **`failed`\n"
-            "**Reason : **`Confused to upload file or the replied message/media.`",
+            "**Razão : **`Confused to upload file or the replied message/media.`",
         )
         return None
     service = await create_app(gdrive)
@@ -990,7 +990,7 @@ async def google_drive(gdrive):
         except CancelProcess:
             await gdrive.edit(
                 "**[FOLDER - CANCELLED]**\n\n"
-                "**Status : **`OK - received signal cancelled.`"
+                "**Status : **`OK - sinal recebido cancelado.`"
             )
             await reset_parentId()
             await gdrive.delete()
@@ -998,9 +998,9 @@ async def google_drive(gdrive):
         except Exception as e:
             await gdrive.edit(
                 "**[FOLDER - UPLOAD]**\n\n"
-                f"**Folder Name : **`{folder_name}`\n"
+                f"**Nome da pasta : **`{folder_name}`\n"
                 "**Status : **`BAD`\n"
-                f"**Reason : **`{str(e)}`"
+                f"**Razão : **`{str(e)}`"
             )
             await reset_parentId()
             return False
@@ -1008,7 +1008,7 @@ async def google_drive(gdrive):
             await gdrive.edit(
                 "**[FOLDER - UPLOAD]**\n\n"
                 f"[{folder_name}]({webViewURL})\n"
-                "**Status : **`OK - Successfully uploaded.`\n\n"
+                "**Status : **`OK - Carregado com sucesso.`\n\n"
             )
             await reset_parentId()
             return True
@@ -1026,14 +1026,14 @@ async def google_drive(gdrive):
                 except CancelProcess:
                     reply += (
                         "**[FILE - CANCELLED]**\n\n"
-                        "**Status : **`OK - received signal cancelled.`"
+                        "**Status : **`OK - sinal recebido cancelado.`"
                     )
                     break
                 except Exception as e:
                     reply += (
                         "**[FILE - ERROR]**\n\n"
                         "**Status : **`BAD`\n"
-                        f"**Reason : **`{str(e)}`\n\n"
+                        f"**Razão : **`{str(e)}`\n\n"
                     )
                     continue
             if reply:
@@ -1059,14 +1059,14 @@ async def google_drive(gdrive):
                     except CancelProcess:
                         reply += (
                             "**[FILE - CANCELLED]**\n\n"
-                            "**Status : **`OK - received signal cancelled.`"
+                            "**Status : **`OK - sinal recebido cancelado.`"
                         )
                         break
                     except Exception as e:
                         reply += (
                             "**[FILE - ERROR]**\n\n"
                             "**Status : **`BAD`\n"
-                            f"**Reason : **`{str(e)}`\n\n"
+                            f"**Razão : **`{str(e)}`\n\n"
                         )
                         continue
             if reply:
@@ -1078,7 +1078,7 @@ async def google_drive(gdrive):
             await gdrive.edit(
                 "**[VALUE - ERROR]**\n\n"
                 "**Status : **`BAD`\n"
-                "**Reason : **given value is not URL nor file/folder path. "
+                "**Razão : **given value is not URL nor file/folder path. "
                 "If you think this is wrong, maybe you use .gd with multiple "
                 "value of files/folders, e.g `.gd <filename1> <filename2>` "
                 "for upload from files/folders path this doesn't support it."
@@ -1092,7 +1092,7 @@ async def google_drive(gdrive):
                 if " not found" in str(e) or "'file'" in str(e):
                     reply += (
                         "**[FILE - CANCELLED]**\n\n"
-                        "**Status : **`OK - received signal cancelled.`"
+                        "**Status : **`OK - sinal recebido cancelado.`"
                     )
                     await asyncio.sleep(2.5)
                     break
@@ -1101,7 +1101,7 @@ async def google_drive(gdrive):
                     reply += (
                         "**[UNKNOWN - ERROR]**\n\n"
                         "**Status : **`BAD`\n"
-                        f"**Reason : **`{dl}` | `{str(e)}`\n\n"
+                        f"**Razão : **`{dl}` | `{str(e)}`\n\n"
                     )
                     continue
         await gdrive.edit(reply, link_preview=False)
@@ -1113,7 +1113,7 @@ async def google_drive(gdrive):
     except CancelProcess:
         gdrive.respond(
             "**[FILE - CANCELLED]**\n\n"
-            "**Status : **`OK - received signal cancelled.`"
+            "**Status : **`OK - sinal recebido cancelado.`"
         )
     end = datetime.now()
     ms = (end - start).seconds
@@ -1134,13 +1134,13 @@ async def set_upload_folder(gdrive):
     global parent_Id
     exe = gdrive.pattern_match.group(1)
     event = gdrive
-    gdrive = await edit_or_reply(gdrive, "`Sending information...`")
+    gdrive = await edit_or_reply(gdrive, "`Enviando informações...`")
     if exe == "gdfclear":
         if G_DRIVE_FOLDER_ID is not None:
             parent_Id = G_DRIVE_FOLDER_ID
             await gdrive.edit(
                 "**[FOLDER - SET]**\n\n"
-                "**Status : **`OK- using G_DRIVE_FOLDER_ID now.`"
+                "**Status : **`OK- usando G_DRIVE_FOLDER_ID agora.`"
             )
             return None
         else:
@@ -1178,7 +1178,7 @@ async def set_upload_folder(gdrive):
         if True in [c1 or c2]:
             parent_Id = inp
             await gdrive.edit(
-                "**[PARENT - FOLDER]**\n\n" "**Status : **`OK - Successfully changed.`"
+                "**[PARENT - FOLDER]**\n\n" "**Status : **`OK - Alterado com sucesso.`"
             )
             return None
         else:
@@ -1189,7 +1189,7 @@ async def set_upload_folder(gdrive):
     else:
         if "uc?id=" in ext_id:
             await gdrive.edit(
-                "**[URL - ERROR]**\n\n" "**Status : **`BAD - Not a valid folderURL.`"
+                "**[URL - ERROR]**\n\n" "**Status : **`BAD - URL de pasta inválido.`"
             )
             return None
         try:
@@ -1207,11 +1207,11 @@ async def set_upload_folder(gdrive):
                     except IndexError:
                         await gdrive.edit(
                             "**[URL - ERROR]**\n\n"
-                            "**Status : **`BAD - Not a valid folderURL.`"
+                            "**Status : **`BAD - URL de pasta inválido.`"
                         )
                         return None
         await gdrive.edit(
-            "**[PARENT - FOLDER]**\n\n" "**Status : **`OK - Successfully changed.`"
+            "**[PARENT - FOLDER]**\n\n" "**Status : **`OK - Alterado com sucesso.`"
         )
     return
 

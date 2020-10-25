@@ -352,7 +352,7 @@ async def startmute(event):
             await edit_or_reply(
                 event,
                 f"{user.first_name} is muted in {event.chat.title}\n"
-                f"`Reason:`{reason}",
+                f"`Razão:`{reason}",
             )
         else:
             await edit_or_reply(
