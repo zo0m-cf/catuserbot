@@ -198,7 +198,7 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     # Special case for deploy
     if conf == "deploy":
-        await event.edit("`Deploying userbot, please wait....`")
+        await event.edit("`Implantando userbot, por favor aguarde....`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
     if changelog == "" and not force_update:
@@ -216,10 +216,10 @@ async def upstream(event):
 
     if force_update:
         await event.edit(
-            "`Force-Syncing to latest stable userbot code, please wait...`"
+            "`Forçar a sincronização com o código do userbot estável mais recente, por favor aguarde...`"
         )
     if conf == "now":
-        await event.edit("`Updating userbot, please wait....`")
+        await event.edit("`Atualizando userbot, por favor aguarde....`")
         await update(event, repo, ups_rem, ac_br)
     return
 
@@ -258,7 +258,7 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    await event.edit("`Deploying userbot, please wait....`")
+    await event.edit("`Implantando userbot, por favor aguarde....`")
     await deploy(event, repo, ups_rem, ac_br, txt)
 
 

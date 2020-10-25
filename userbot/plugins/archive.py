@@ -162,7 +162,7 @@ async def _(event):
                 ),
             )
             directory_name = downloaded_file_name
-            await mone.edit("creating rar archive, please wait..")
+            await mone.edit("criando arquivo rar, por favor aguarde..")
             patoolib.create_archive(
                 directory_name + ".rar", (directory_name, Config.TMP_DOWNLOAD_DIRECTORY)
             )

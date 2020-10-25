@@ -323,7 +323,7 @@ async def get_pack_info(event):
     try:
         stickerset_attr = rep_msg.document.attributes[1]
         catevent = await edit_or_reply(
-            event, "`Fetching details of the sticker pack, please wait..`"
+            event, "`Buscando detalhes do pacote de adesivos, por favor aguarde..`"
         )
     except BaseException:
         await edit_or_reply(event, "`This is not a sticker. Reply to a sticker.`")

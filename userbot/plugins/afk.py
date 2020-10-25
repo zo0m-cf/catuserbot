@@ -78,9 +78,9 @@ async def on_afk(event):
         msg = None
         message_to_reply = (
             f"__Modo AFK Ativado.__ "
-            + f"\n\n__Retorno sua mensagem assim que possivel.__\n**MOTIVO**: {reason}"
+            + f"\n\n__Retorno sua mensagem assim que possível.__\n**MOTIVO**: {reason}"
             if reason
-            else f"**Ei!**\n__No momento estou indisponível.  "
+            else f"**Ei!**\n**No momento estou indisponível.**  "
         )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
@@ -130,7 +130,7 @@ async def _(event):
                 event.chat_id, f"**Tô saindo!** __motivo ~ {reason}__"
             )
         else:
-            await borg.send_message(event.chat_id, f"**Ativando afk!**")
+            await borg.send_message(event.chat_id, f"**Modo AFK Ativado!**")
         await asyncio.sleep(5)
         await event.delete()
         if BOTLOG:

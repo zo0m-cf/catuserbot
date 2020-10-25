@@ -72,7 +72,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await v_url.edit("`Fetching data, please wait..`")
+        await v_url.edit("`Buscando dados, por favor aguarde..`")
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url)
     except DownloadError as DE:
