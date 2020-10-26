@@ -284,7 +284,7 @@ async def download(event, gdrive, service, uri=None):
                         t,
                         gdrive,
                         current_time,
-                        "[FILE - DOWNLOAD]",
+                        "[BAIXANDO - ARQUIVO]",
                         is_cancelled=is_cancelled,
                     )
                 ),
@@ -310,7 +310,7 @@ async def download(event, gdrive, service, uri=None):
         return reply
     mimeType = await get_mimeType(required_file_name)
     try:
-        status = "[FILE - UPLOAD]"
+        status = "[CARREGANDO - ARQUIVO]"
         if isfile(required_file_name):
             try:
                 result = await upload(

@@ -257,7 +257,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             the_message = ""
             the_message += "#BLOCKED_PMs\n\n"
             the_message += f"[User](tg://user?id={chat_id}): {chat_id}\n"
-            the_message += f"Message Count: {PM_WARNS[chat_id]}\n"
+            the_message += f"Contagem de Mensagens: {PM_WARNS[chat_id]}\n"
             try:
                 await event.client.send_message(
                     entity=Var.PRIVATE_GROUP_ID,
@@ -303,15 +303,15 @@ CMD_HELP.update(
     {
         "pmpermit": "**Plugin : **`pmpermit`\
         \n\n**Syntax : **.approve`\
-        \n**Uso : **Approves the mentioned/replied person to PM.\
+        \n**Uso : **Aprova a pessoa mencionada/respondida ao PM.\
         \n\n**Syntax : **`.disapprove`\
-        \n**Uso : **dispproves the mentioned/replied person to PM.\
+        \n**Uso : **Reprova a pessoa mencionada/respondida ao PM.\
         \n\n**Syntax : **`.block`\
-        \n**Uso : **Blocks the person.\
+        \n**Uso : **Bloqueia a pessoa.\
         \n\n**Syntax : **`.unblock`\
-        \n**Uso : **unBlocks the person.\
+        \n**Uso : **Desbloqueia a pessoa.\
         \n\n**Syntax : **`.listapproved`\
-        \n**Uso : **To list the all approved users.\
+        \n**Uso : **Para listar todos os usuários aprovados.\
 "
     }
 )
