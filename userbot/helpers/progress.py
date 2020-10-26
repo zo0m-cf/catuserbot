@@ -90,7 +90,7 @@ async def progress(
         if "upload" in prog_type.lower():
             status = "Carrengando"
         elif "download" in prog_type.lower():
-            status = "Downloading"
+            status = "Baixando"
         else:
             status = "Processando"
         progress_str = "`{0}` | [{1}{2}] `{3}%`".format(
