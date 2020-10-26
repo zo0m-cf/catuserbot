@@ -45,14 +45,14 @@ async def spammer(e):
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) chat  com {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
     elif reply_to_id.media:
@@ -85,7 +85,7 @@ async def spammer(e):
                     await e.client.send_message(
                         BOTLOG_CHATID,
                         "#SPAM\n"
-                        + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} times with below message",
+                        + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} times with below message",
                     )
                     sandy = await borg.send_file(BOTLOG_CHATID, downloaded_file_name)
                     await borg(
@@ -103,7 +103,7 @@ async def spammer(e):
                     await e.client.send_message(
                         BOTLOG_CHATID,
                         "#SPAM\n"
-                        + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) with {counter} times with below message",
+                        + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) with {counter} times with below message",
                     )
                     sandy = await borg.send_file(BOTLOG_CHATID, downloaded_file_name)
                     await borg(
@@ -132,14 +132,14 @@ async def spammer(e):
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) chat  com {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
     else:
@@ -180,14 +180,14 @@ async def spammer(e):
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) chat  com {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
     elif reply_to_id.media:
@@ -216,7 +216,7 @@ async def spammer(e):
                     await e.client.send_message(
                         BOTLOG_CHATID,
                         "#SPAM\n"
-                        + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} times with below message",
+                        + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} times with below message",
                     )
                     sandy = await borg.send_file(BOTLOG_CHATID, downloaded_file_name)
                     await borg(
@@ -234,7 +234,7 @@ async def spammer(e):
                     await e.client.send_message(
                         BOTLOG_CHATID,
                         "#SPAM\n"
-                        + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) with {counter} times with below message",
+                        + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) with {counter} times with below message",
                     )
                     sandy = await borg.send_file(BOTLOG_CHATID, downloaded_file_name)
                     await borg(
@@ -263,14 +263,14 @@ async def spammer(e):
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await e.client.send_message(
                     BOTLOG_CHATID,
                     "#SPAM\n"
-                    + f"Spam was executed com sucesso em {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
+                    + f"Spam foi executado com sucesso em {e.chat.title}(`{e.chat_id}`) chat  com {counter} mensagens de \n"
                     + f"`{spam_message}`",
                 )
     else:
@@ -290,13 +290,13 @@ async def tmeme(e):
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#CSPAM\n"
-                + f"Letter Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
+                + f"Letter Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
             )
         else:
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#CSPAM\n"
-                + f"Letter Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
+                + f"Letter Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
             )
 
 
@@ -313,13 +313,13 @@ async def tmeme(e):
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#WSPAM\n"
-                + f"Word Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
+                + f"Word Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
             )
         else:
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#WSPAM\n"
-                + f"Word Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
+                + f"Word Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with : `{message}`",
             )
 
 
@@ -341,13 +341,13 @@ async def spammer(e):
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#DELAYSPAM\n"
-                + f"Delay Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {spamDelay}s Delay and {counter} times with : `{message}`",
+                + f"Delay Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {spamDelay}s Delay and {counter} times with : `{message}`",
             )
         else:
             await e.client.send_message(
                 BOTLOG_CHATID,
                 "#DELAYCSPAM\n"
-                + f"Delay Spam was executed com sucesso em [User](tg://user?id={e.chat_id}) chat with {spamDelay}s Delay and {counter} times with: `{message}`",
+                + f"Delay Spam foi executado com sucesso em [User](tg://user?id={e.chat_id}) chat with {spamDelay}s Delay and {counter} times with: `{message}`",
             )
 
 
