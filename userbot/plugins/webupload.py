@@ -22,7 +22,7 @@ link_regex = re.compile(
 async def labstack(event):
     if event.fwd_from:
         return
-    editor = await edit_or_reply(event, "Processing...")
+    editor = await edit_or_reply(event, "Processando...")
     input_str = event.pattern_match.group(1)
     reply = await event.get_reply_message()
     if input_str:

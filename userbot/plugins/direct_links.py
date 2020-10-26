@@ -24,7 +24,7 @@ from . import CMD_HELP
 @bot.on(sudo_cmd(allow_sudo=True, pattern=r"direct(?: |$)([\s\S]*)"))
 async def direct_link_generator(request):
     """ direct links generator """
-    catevent = await edit_or_reply(request, "`Processing...`")
+    catevent = await edit_or_reply(request, "`Processando...`")
     textx = await request.get_reply_message()
     message = request.pattern_match.group(1)
     if message:

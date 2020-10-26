@@ -35,7 +35,7 @@ async def _(event):
     else:
         uid = reply_message.from_id
     chat = "@SangMataInfo_bot"
-    catevent = await edit_or_reply(event, "`Processing...`")
+    catevent = await edit_or_reply(event, "`Processando...`")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(f"/search_id {uid}")

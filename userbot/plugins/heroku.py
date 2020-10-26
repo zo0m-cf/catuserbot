@@ -111,7 +111,7 @@ async def dyno_usage(dyno):
     """
     Get your account Dyno Uso
     """
-    dyno = await edit_or_reply(dyno, "`Processing...`")
+    dyno = await edit_or_reply(dyno, "`Processando...`")
     useragent = (
         "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "

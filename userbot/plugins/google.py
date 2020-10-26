@@ -127,7 +127,7 @@ async def _(img):
         await edit_or_reply(img, "`Reply to photo or sticker nigger.`")
         return
     if photo:
-        catevent = await edit_or_reply(img, "`Processing...`")
+        catevent = await edit_or_reply(img, "`Processando...`")
         try:
             image = Image.open(photo)
         except OSError:

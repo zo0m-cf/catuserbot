@@ -66,7 +66,7 @@ LastLog = False
 @borg.on(admin_cmd(outgoing=True, pattern="lastfm$"))
 async def last_fm(lastFM):
     # For .lastfm command, fetch scrobble data from last.fm.
-    await lastFM.edit("Processing...")
+    await lastFM.edit("Processando...")
     preview = None
     playing = User(LASTFM_USERNAME, lastfm).get_now_playing()
     username = f"https://www.last.fm/user/{LASTFM_USERNAME}"

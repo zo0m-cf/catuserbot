@@ -82,7 +82,7 @@ async def carbon_api(e):
 @bot.on(admin_cmd(outgoing=True, pattern="krb"))
 @bot.on(sudo_cmd(pattern="krb", allow_sudo=True))
 async def carbon_api(e):
-    cat = await edit_or_reply(e, "`Processing....`")
+    cat = await edit_or_reply(e, "`Processando....`")
     CARBON = "https://carbon.now.sh/?l={lang}&code={code}"
     textx = await e.get_reply_message()
     pcode = e.text
