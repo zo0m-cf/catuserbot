@@ -51,13 +51,13 @@ async def catbot(catmemes):
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
             await catmemmes.edit(
-                "the replied file size is not supported it must me below 5 mb"
+                "the replied file size não é suportado it must me below 5 mb"
             )
             os.remove(download_location)
             return
         await catmemmes.edit("generating image..")
     else:
-        await catmemmes.edit("the replied file is not supported")
+        await catmemmes.edit("the replied file não é suportado")
         os.remove(download_location)
         return
     try:
@@ -100,13 +100,13 @@ async def catbot(catmemes):
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
             await catmemmes.edit(
-                "the replied file size is not supported it must me below 5 mb"
+                "the replied file size não é suportado it must me below 5 mb"
             )
             os.remove(download_location)
             return
         await catmemmes.edit("generating image..")
     else:
-        await catmemmes.edit("the replied file is not supported")
+        await catmemmes.edit("the replied file não é suportado")
         os.remove(download_location)
         return
     try:
@@ -159,13 +159,13 @@ async def catbot(catmemes):
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
             await catmemmes.edit(
-                "the replied file size is not supported it must me below 5 mb"
+                "the replied file size não é suportado it must me below 5 mb"
             )
             os.remove(download_location)
             return
         await catmemmes.edit("generating image..")
     else:
-        await catmemmes.edit("the replied file is not supported")
+        await catmemmes.edit("the replied file não é suportado")
         os.remove(download_location)
         return
     try:
@@ -218,13 +218,13 @@ async def catbot(catmemes):
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
             await catmemmes.edit(
-                "the replied file size is not supported it must me below 5 mb"
+                "the replied file size não é suportado it must me below 5 mb"
             )
             os.remove(download_location)
             return
         await catmemmes.edit("generating image..")
     else:
-        await catmemmes.edit("the replied file is not supported")
+        await catmemmes.edit("the replied file não é suportado")
         os.remove(download_location)
         return
     try:

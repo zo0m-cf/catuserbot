@@ -168,7 +168,7 @@ async def _(event):
             response = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
             if response.text.startswith("Send me an animated sticker!"):
-                return await catevent.edit("`This file is not supported`")
+                return await catevent.edit("`This file não é suportado`")
             catresponse = response if response.media else await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
             catfile = Path(await event.client.download_media(catresponse, "./temp/"))
@@ -282,7 +282,7 @@ async def _(event):
             voice_note = False
             supports_streaming = True
         else:
-            await event.edit("not supported")
+            await event.edit("não suportado")
             os.remove(downloaded_file_name)
             return
         logger.info(command_to_run)

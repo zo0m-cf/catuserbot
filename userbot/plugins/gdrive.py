@@ -496,7 +496,7 @@ async def change_permission(service, Id):
     except HttpError as e:
         """ it's not possible to change permission per file for teamdrive """
         if f'"File not found: {Id}."' in str(e) or (
-            '"Sharing folders that are inside a shared drive is not supported."'
+            '"Sharing folders that are inside a shared drive não é suportado."'
             in str(e)
         ):
             return

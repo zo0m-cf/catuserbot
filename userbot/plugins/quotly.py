@@ -26,7 +26,7 @@ async def stickerchat(catquotes):
     fetchmsg = reply.message
     repliedreply = await reply.get_reply_message()
     if reply.media and reply.media.document.mime_type in ("mp4"):
-        await edit_or_reply(catquotes, "`this format is not supported now`")
+        await edit_or_reply(catquotes, "`this format não é suportado now`")
         return
     catevent = await edit_or_reply(catquotes, "`Making quote...`")
     user = (
