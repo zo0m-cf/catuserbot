@@ -354,15 +354,15 @@ async def spammer(e):
 CMD_HELP.update(
     {
         "spam": ".cspam <text>\
-\nUso: Spam the text letter by letter.\
+\nUso: Spam o texto letra por letra.\
 \n\n.spam <count> <text>\
-\nUso: Floods text in the chat !!\
-\n\n.spam <count> replay to media\
-\nUso: Floods text in the media !!\
+\nUso: Texto de inundação no chat !!\
+\n\n.spam <count> responda a mídia\
+\nUso: Texto de inundação na mídia !!\
 \n\n.wspam <text>\
-\nUso: Spam the text word by word.\
+\nUso: Spam o texto palavra por palavra.\
 \n\n.delayspam <delay> <count> <text>\
-\nUso: .delayspam but with custom delay.\
-\n\n\n**NOTE : Spam at your own risk !!**"
+\nUso: .delayspam mas com atraso personalizado.\
+\n\n\n**NOTE : Use por sua própria conta e risco !!**"
     }
 )
