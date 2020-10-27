@@ -30,7 +30,7 @@ async def download_video(v_url):
     """ For .ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
     ytype = v_url.pattern_match.group(1).lower()
-    v_url = await edit_or_reply(v_url, "`Preparing to download...`")
+    v_url = await edit_or_reply(v_url, "`Preparando para baixar...`")
     if ytype == "a":
         opts = {
             "format": "bestaudio",

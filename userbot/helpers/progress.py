@@ -87,9 +87,9 @@ async def progress(
         speed = current / diff
         elapsed_time = round(diff)
         eta = round((total - current) / speed)
-        if "upload" in prog_type.lower():
+        if "carregar" in prog_type.lower():
             status = "Carrengando"
-        elif "download" in prog_type.lower():
+        elif "baixar" in prog_type.lower():
             status = "Baixando"
         else:
             status = "Processando"
@@ -101,7 +101,7 @@ async def progress(
         )
         tmp = (
             f"{progress_str}\n"
-            f"`{humanbytes(current)} of {humanbytes(total)}"
+            f"`{humanbytes(current)} de {humanbytes(total)}"
             f" @ {humanbytes(speed)}`\n"
             f"**ETA :**` {time_formatter(eta)}`\n"
             f"**Duração :** `{time_formatter(elapsed_time)}`"

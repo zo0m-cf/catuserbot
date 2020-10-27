@@ -38,7 +38,7 @@ from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
 @bot.on(admin_cmd(outgoing=True, pattern="kickme$"))
 async def kickme(leave):
-    await leave.edit("Nope, no, no, I go away")
+    await leave.edit("Não, não, não, eu vou embora‌‌.")
     await leave.client.kick_participant(leave.chat_id, "me")
 
 

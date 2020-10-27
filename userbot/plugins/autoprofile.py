@@ -175,7 +175,7 @@ async def _(event):
 
 @borg.on(admin_cmd(pattern="autobio$"))  # pylint:disable=E0602
 async def _(event):
-    await event.edit(f"Auto bio has been started by my Master")
+    await event.edit(f"Auto bio foi iniciado")
     while True:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M:%S")
