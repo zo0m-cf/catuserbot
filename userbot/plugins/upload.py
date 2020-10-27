@@ -96,7 +96,7 @@ async def upload(path, event, udir_event):
                 ),
             )
         else:
-            metadata = extractMetadata(createParser(path))
+            metadata = extractMetadata(createParser(str(path)))
             duration = 0
             width = 0
             height = 0
@@ -213,9 +213,10 @@ async def video_catfile(event):
         if aspect_ratio != 1:
             crop_by = width if (height > width) else height
             await runcmd(f'ffmpeg -i {catfile} -vf "crop={crop_by}:{crop_by}" {PATH}')
-            os.remove(catfile)
         else:
-            os.rename(catfile, PATH)
+            copyfile(catfile, PATH)
+        if str(catfile) != str(PATH):
+            os.remove(catfile)
     else:
         thumb_loc = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
         catthumb = None
@@ -246,7 +247,26 @@ async def video_catfile(event):
             )
     if os.path.exists(PATH):
         catid = event.reply_to_msg_id
-        await borg.send_file(event.chat_id, PATH, reply_to=catid, video_note=True)
+        c_time = time.time()
+        await event.client.send_file(
+            event.chat_id,
+            PATH,
+            allow_cache=False,
+            reply_to=catid,
+            video_note=True,
+            attributes=[
+                DocumentAttributeVideo(
+                    duration=60,
+                    w=1,
+                    h=1,
+                    round_message=True,
+                    supports_streaming=True,
+                )
+            ],
+            progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
+                progress(d, t, catevent, c_time, "Uploading...", PATH)
+            ),
+        )
         os.remove(PATH)
     await catevent.delete()
 
