@@ -103,10 +103,10 @@ CMD_HELP.update(
     {
         "purge": "**Plugin : **`purge`\
         \n\n**Syntax : **`.purge responda a mensagem para começar a limpar a partir daí`\
-        \n**Function : **__Purges todas as mensagens começando na resposta.__\
+        \n**Função : **__Apaga todas as mensagens começando na resposta.__\
         \n\n**Syntax : **`.purgeme <x>`\
-        \n**Function : **__Exclui x quantidade de suas mensagens mais recentes.__\
+        \n**Função : **__Exclui x quantidade de suas mensagens mais recentes.__\
         \n\n**Syntax : **`.del responda a mensagem para deletar`\
-        \n**Function : **__Exclui a mensagem que você respondeu.__"
+        \n**Função : **__Exclui a mensagem que você respondeu.__"
     }
 )

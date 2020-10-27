@@ -107,12 +107,12 @@ CMD_HELP.update(
     {
         "translate": "**Plugin :** `translate`\
          \n\n**Syntax : **`.tl` LanguageCode as reply to a message\
-         \n**Function : **.tl LangaugeCode | text to translate\
+         \n**Função : **.tl LangaugeCode | text to translate\
          \n**Example :** `.tl hi`\
          \n\n**Syntax : **`.trt Reply to a message`/`.trt message`\
-         \n**Function : **__It will translate your messege__\
+         \n**Função : **__It will translate your messege__\
          \n\n**Syntax : **`.lang trt LanguageCode`\
-         \n**Function : **__It will set default langaugeCode for **trt**__\
+         \n**Função : **__It will set default langaugeCode for **trt**__\
         "
     }
 )

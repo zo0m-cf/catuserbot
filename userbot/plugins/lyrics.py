@@ -116,9 +116,9 @@ CMD_HELP.update(
     {
         "lyrics": "**Plugin : **`lyrics`\
         \n\n**Syntax : **`.lyrics <aritst name - song nane>` __or__ `.lyrics <song_name>`\
-        \n**Function : ** __searches a song lyrics and sends you if song name doesnt work try along with artisyt name__\
+        \n**Função : ** __searches a song lyrics and sends you if song name doesnt work try along with artisyt name__\
         \n\n**Syntax : ** .`glyrics <artist name> - <song name>`\
-        \n**Function : **__genius lyrics finder for songs__\
+        \n**Função : **__genius lyrics finder for songs__\
         \n__note__: **-** is neccessary when searching the lyrics to divided artist and song\
         \nget this value from `https://genius.com/developers` \
         \nAdd:-  `GENIUS_API_TOKEN` and token value in heroku app settings for funtion of glyrics \

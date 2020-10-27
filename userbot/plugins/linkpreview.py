@@ -43,6 +43,6 @@ CMD_HELP.update(
     {
         "linkpreview": "**Plugin : **`linkpreview`\
     \n\n**Syntax : **`.ctg` reply to link\
-    \n**Function : **Converts the given link to link preview"
+    \n**Função : **Converts the given link to link preview"
     }
 )

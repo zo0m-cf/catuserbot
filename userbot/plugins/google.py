@@ -216,10 +216,10 @@ CMD_HELP.update(
     {
         "google": "**Plugin :**`google`\
         \n\n**Syntax :** `.gs <limit> <query>` or `.gs <limit> (replied message)`\
-        \n**Function : **will google  search and sends you top 10 results links.\
+        \n**Função : **will google  search and sends you top 10 results links.\
         \n\n**Syntax :** `.grs` reply to image\
-        \n**Function : **will google reverse search the image and shows you the result.\
+        \n**Função : **will google reverse search the image and shows you the result.\
         \n\n**Syntax : **`.reverse limit`\
-        \n**Function : **Reply to a pic/sticker to revers-search it on Google Images !!"
+        \n**Função : **Reply to a pic/sticker to revers-search it on Google Images !!"
     }
 )

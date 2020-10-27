@@ -194,8 +194,8 @@ CMD_HELP.update(
     {
         "antispambot": "**Plugin : **`antispambot`\
         \n\n**Syntax : **`.cascheck`\
-        \n**Function : **__Searches for cas(combot antispam service) banned users in group and shows you the list__\
+        \n**Função : **__Searches for cas(combot antispam service) banned users in group and shows you the list__\
         \n\n**Syntax : **`.spamcheck`\
-        \n**Function : **__Searches for spamwatch banned users in group and shows you the list__"
+        \n**Função : **__Searches for spamwatch banned users in group and shows you the list__"
     }
 )

@@ -294,10 +294,10 @@ CMD_HELP.update(
     {
         "whois": "**Plugin : **`whois`\
     \n\n**Syntax : **`.whois <username>` or reply to someones text with .whois\
-    \n**Function : ** Gets info of an user.\
+    \n**Função : ** Gets info of an user.\
     \n\n**Syntax : **`.userinfo <username>` or reply to someones text with .userinfo\
-    \n**Function : ** Gets info of an user.\
+    \n**Função : ** Gets info of an user.\
     \n\n**Syntax : **`.link` <text>\
-    \n**Function : ** Generates a link to the user's PM with a custom text."
+    \n**Função : ** Generates a link to the user's PM with a custom text."
     }
 )

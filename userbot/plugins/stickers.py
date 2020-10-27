@@ -358,14 +358,14 @@ CMD_HELP.update(
     {
         "stickers": "**Plugins : **`stickers`\
     \n\n**Syntax : **`.kang`\
-\n**Function : **__Reply .kang to a sticker or an image to kang it to your userbot pack.__\
+\n**Função : **__Reply .kang to a sticker or an image to kang it to your userbot pack.__\
 \n\n**Syntax : **`.kang [emoji('s)]`\
-\n**Function : **__Works just like .kang but uses the emoji('s) you picked.__\
+\n**Função : **__Works just like .kang but uses the emoji('s) you picked.__\
 \n\n**Syntax : **`.kang [number]`\
-\n**Function : **__Kang's the sticker/image to the specified pack but uses 🤔 as emoji.__\
+\n**Função : **__Kang's the sticker/image to the specified pack but uses 🤔 as emoji.__\
 \n\n**Syntax : **`.kang [emoji('s)] [number]`\
-\n**Function : **__Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.__\
+\n**Função : **__Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.__\
 \n\n**Syntax : **`.stkrinfo`\
-\n**Function : **__Gets info about the sticker pack.__"
+\n**Função : **__Gets info about the sticker pack.__"
     }
 )

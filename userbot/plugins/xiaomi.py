@@ -158,16 +158,16 @@ CMD_HELP.update(
         "xiaomi": "**Plugin :** `Xiaomi`\
         \n\n__**For Xiaomeme devices only!**__\
         \n\n**Syntax :** `.firmware` (codename)\
-        \n**Function : **Get lastest Firmware\
+        \n**Função : **Get lastest Firmware\
         \n\n**Syntax :** `.pb` (codename)\
-        \n**Function : **Get latest PBRP\
+        \n**Função : **Get latest PBRP\
         \n\n**Syntax :** `.specs` (codename)\
-        \n**Function : **Get quick spec information about device\
+        \n**Função : **Get quick spec information about device\
         \n\n**Syntax :** `.fastboot` (codename)\
-        \n**Function : **Get latest fastboot MIUI\
+        \n**Função : **Get latest fastboot MIUI\
         \n\n**Syntax :** `.recovery` (codename)\
-        \n**Function : **Get latest recovery MIUI\
+        \n**Função : **Get latest recovery MIUI\
         \n\n**Syntax :** `.of` (codename)\
-        \n**Function : **Get latest ORangeFox Recovery"
+        \n**Função : **Get latest ORangeFox Recovery"
     }
 )

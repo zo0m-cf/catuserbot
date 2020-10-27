@@ -355,7 +355,7 @@ CMD_HELP.update(
     {
         "direct_links": "**Plugin : **`direct`\
         \n\n**Syntax : **`.direct <url>`\n"
-        "**Function : **Reply to a link or paste a URL to\n"
+        "**Função : **Reply to a link or paste a URL to\n"
         "generate a direct download link\n\n"
         "List of supported URLs:\n"
         "`Google Drive - Cloud Mail - Yandex.Disk - AFH - "

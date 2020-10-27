@@ -98,6 +98,6 @@ CMD_HELP.update(
     {
         "gdrive_download": "**Plugin : **`gdrive_download`\
         \n\n**Syntax : **`.gdl <gdrive File-Link>`\
-        \n**Function : **G-Drive File Downloader Plugin For Userbot. only gdrive files are supported now"
+        \n**Função : **G-Drive File Downloader Plugin For Userbot. only gdrive files are supported now"
     }
 )

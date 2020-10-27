@@ -83,9 +83,9 @@ CMD_HELP.update(
     {
         "sangamata": "**Plugin : **`sangamata`\
     \n\n**Syntax : **`.sg <username/userid/reply>`\
-    \n**Function : **__Shows you the previous name history of user.__\
+    \n**Função : **__Shows you the previous name history of user.__\
     \n\n**Syntax : **`.sgu <username/userid/reply>`\
-    \n**Function : **__Shows you the previous username history of user.__\
+    \n**Função : **__Shows you the previous username history of user.__\
     "
     }
 )
