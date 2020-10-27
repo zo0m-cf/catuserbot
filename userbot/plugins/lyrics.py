@@ -24,7 +24,7 @@ async def _(event):
     elif reply.text:
         query = reply.message
     else:
-        await catevent.edit("`What I am Supposed to find `")
+        await catevent.edit("`O que devo encontrar `")
         return
     song = ""
     song = Song.find_song(query)

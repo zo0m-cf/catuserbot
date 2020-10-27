@@ -31,10 +31,10 @@ async def _(event):
         if reply.message:
             query = reply.message
     else:
-        await edit_or_reply(event, "`What I am Supposed to find `")
+        await edit_or_reply(event, "`O que devo encontrar `")
         return
     cat = pybase64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-    catevent = await edit_or_reply(event, "`wi8..! I am finding your song....`")
+    catevent = await edit_or_reply(event, "`Espere..! Estou encontrando sua música.......`")
     video_link = await yt_search(str(query))
     if not url(video_link):
         return await catevent.edit(
@@ -105,10 +105,10 @@ async def _(event):
         if reply.message:
             query = reply.messag
     else:
-        event = await edit_or_reply(event, "What I am Supposed to find")
+        event = await edit_or_reply(event, "O que devo encontrar")
         return
     cat = pybase64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-    catevent = await edit_or_reply(event, "`wi8..! I am finding your song....`")
+    catevent = await edit_or_reply(event, "`Espere..! Estou encontrando sua música.......`")
     video_link = await yt_search(str(query))
     if not url(video_link):
         return await catevent.edit(
@@ -167,7 +167,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     chat = "@SpotifyMusicDownloaderBot"
-    catevent = await edit_or_reply(event, "`wi8..! I am finding your song....`")
+    catevent = await edit_or_reply(event, "`Espere..! Estou encontrando sua música.......`")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
