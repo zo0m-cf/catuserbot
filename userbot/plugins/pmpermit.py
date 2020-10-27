@@ -36,7 +36,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     PM_START.remove(chat.id)
                 pmpermit_sql.approve(chat.id, reason)
                 await event.edit(
-                    "Aprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Aprovado para PV [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
@@ -62,7 +62,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     PM_START.remove(chat)
                 pmpermit_sql.approve(chat, reason)
                 await event.edit(
-                    "Aprovado para PM [{}](tg://user?id={})".format(firstname, chat)
+                    "Aprovado para PV [{}](tg://user?id={})".format(firstname, chat)
                 )
             else:
                 await event.edit(
@@ -101,7 +101,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit(
-                    "Reprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Reprovado para PV [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
@@ -119,7 +119,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
                 await event.edit(
-                    "Reprovado para PM [{}](tg://user?id={})".format(firstname, chat.id)
+                    "Reprovado para PV [{}](tg://user?id={})".format(firstname, chat.id)
                 )
             else:
                 await event.edit(
