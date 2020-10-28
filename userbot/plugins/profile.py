@@ -206,7 +206,7 @@ CMD_HELP.update(
 \n\n.delpfp or .delpfp <number>/<all>\
 \nUso: Deletes your Telegram profile picture(s).\
 \n\n.myusernames\
-\nUso: Shows usernames reserved by you.that is created by you channels or groups\
+\nUso: Shows usernames of your created channels and groups \
 \n\n.count\
 \nUso: Counts your groups, chats, bots etc..."
     }

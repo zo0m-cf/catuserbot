@@ -358,7 +358,7 @@ CMD_HELP.update(
 \n\n.spam <count> <text>\
 \nUso: Texto de inundação no chat !!\
 \n\n.spam <count> responda a mídia\
-\nUso: Texto de inundação na mídia !!\
+\nUso: Envia a mídia respondida <count> vezes !!\
 \n\n.wspam <text>\
 \nUso: Spam o texto palavra por palavra.\
 \n\n.delayspam <delay> <count> <text>\
