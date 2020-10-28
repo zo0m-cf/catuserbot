@@ -143,7 +143,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "afk": "**Plugin : **`afk`\
-        \n\n**Syntax : **`.afk [Optional Razão]`\
+        \n\n**Syntax : **`.afk [Razão]`\
 \n**Uso : **Define você como afk.\nRespostas para quem marca/PM's \
 você dizendo a eles que você está AFK(motivo).\n\nDesliga o AFK quando você digita qualquer coisa, em qualquer lugar.\
 \nafk significa longe do teclado.\

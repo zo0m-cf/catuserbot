@@ -41,7 +41,7 @@ async def _(event):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "You put the bot to sleep for " + str(counter) + " seconds",
+            "Você colocou o bot para dormir por " + str(counter) + " segundos",
         )
     event = await edit_or_reply(event, f"`ok, let me sleep for {counter} seconds`")
     sleep(counter)

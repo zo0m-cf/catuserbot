@@ -314,7 +314,7 @@ async def startmute(event):
             creator = chat.creator
             if not admin and not creator:
                 await edit_or_reply(
-                    event, "`You can't mute a person without admin rights niqq.` ಥ﹏ಥ  "
+                    event, "`Você não pode silenciar uma pessoa sem direitos de administrador.` ಥ﹏ಥ  "
                 )
                 return
             result = await event.client(
@@ -340,7 +340,7 @@ async def startmute(event):
                     )
             elif "creator" not in vars(chat):
                 return await edit_or_reply(
-                    event, "`You can't mute a person without admin rights niqq.` ಥ﹏ಥ  "
+                    event, "`Você não pode silenciar uma pessoa sem direitos de administrador.` ಥ﹏ಥ  "
                 )
             try:
                 mute(user.id, event.chat_id)

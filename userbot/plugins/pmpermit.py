@@ -301,17 +301,17 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 CMD_HELP.update(
     {
-        "pmpermit": "**Plugin : **`pmpermit`\
-        \n\n**Syntax : **.approve`\
-        \n**Uso : **Aprova a pessoa mencionada/respondida ao PM.\
-        \n\n**Syntax : **`.disapprove`\
-        \n**Uso : **Reprova a pessoa mencionada/respondida ao PM.\
-        \n\n**Syntax : **`.block`\
-        \n**Uso : **Bloqueia a pessoa.\
-        \n\n**Syntax : **`.unblock`\
-        \n**Uso : **Desbloqueia a pessoa.\
-        \n\n**Syntax : **`.listapproved`\
-        \n**Uso : **Para listar todos os usuários aprovados.\
+        "pmpermit": "**Plugin :** `pmpermit`\
+        \n\n**Syntax :** `.approve`\
+        \n**Uso :** Aprova a pessoa mencionada/respondida ao PM.\
+        \n\n**Syntax :** `.disapprove`\
+        \n**Uso :** Reprova a pessoa mencionada/respondida ao PM.\
+        \n\n**Syntax :** `.block`\
+        \n**Uso :** Bloqueia a pessoa.\
+        \n\n**Syntax :** `.unblock`\
+        \n**Uso :** Desbloqueia a pessoa.\
+        \n\n**Syntax :** `.listapproved`\
+        \n**Uso :** Para listar todos os usuários aprovados.\
 "
     }
 )

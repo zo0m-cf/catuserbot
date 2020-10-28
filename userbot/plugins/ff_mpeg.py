@@ -121,7 +121,7 @@ async def ff_mpeg_trim_cmd(event):
         return
     end = datetime.now()
     ms = (end - start).seconds
-    await event.edit(f"Completed Process in {ms} seconds")
+    await event.edit(f"Processo Concluído em {ms} segundos")
 
 
 async def take_screen_shot(video_file, output_directory, ttl):

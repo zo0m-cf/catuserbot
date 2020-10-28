@@ -148,7 +148,7 @@ async def _(event):
         return
     end = datetime.now()
     ms = (end - start).seconds
-    await catevent.edit("Created BarCode in {} seconds".format(ms))
+    await catevent.edit("BarCode criado em {} segundos".format(ms))
     await asyncio.sleep(5)
     await catevent.delete()
 
