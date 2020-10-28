@@ -152,7 +152,7 @@ async def ban(catty):
         await catevent.edit(
             f"{user.first_name} was banned in {catty.chat.title}\n"
             f"banned for {cattime}\n"
-            f"Razão:`{reason}`"
+            f"Motivo:`{reason}`"
         )
         if BOTLOG:
             await catty.client.send_message(

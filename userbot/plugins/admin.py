@@ -221,7 +221,7 @@ async def ban(bon):
         )
         return
     if reason:
-        await catevent.edit(f"`{str(user.id)}` is banned !!\nReason: {reason}")
+        await catevent.edit(f"`{str(user.id)}` is banned !!\nMotivo: {reason}")
     else:
         await catevent.edit(f"`{str(user.id)}` is banned !!")
     if BOTLOG:
@@ -352,7 +352,7 @@ async def startmute(event):
             await edit_or_reply(
                 event,
                 f"{user.first_name} is muted in {event.chat.title}\n"
-                f"`Razão:`{reason}",
+                f"`Motivo:`{reason}",
             )
         else:
             await edit_or_reply(
@@ -494,7 +494,7 @@ async def kick(usr):
         return
     if reason:
         await catevent.edit(
-            f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
+            f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`\nMotivo: {reason}"
         )
     else:
         await catevent.edit(f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`")

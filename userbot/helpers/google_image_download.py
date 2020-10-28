@@ -1772,7 +1772,7 @@ def main():
         if not arguments["silent_mode"]:
             print("\nEverything downloaded!")
             print("Total errors: " + str(total_errors))
-            print("Total time taken: " + str(total_time) + " Seconds")
+            print("Total time taken: " + str(total_time) + " Segundos")
 
 
 if __name__ == "__main__":

@@ -92,7 +92,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await mone.edit(
-                f"unzipped and stored to `{destination}` \n**Time Taken :** `{ms} seconds`"
+                f"unzipped and stored to `{destination}` \n**Time Taken :** `{ms} segundos`"
             )
         else:
             await mone.edit(f"I can't find that path `{input_str}`")
@@ -127,7 +127,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await mone.edit(
-                f"unzipped and stored to `{destination}` \n**Time Taken :** `{ms} seconds`"
+                f"unzipped and stored to `{destination}` \n**Time Taken :** `{ms} segundos`"
             )
             os.remove(path)
 

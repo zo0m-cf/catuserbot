@@ -23,7 +23,7 @@ async def _(event):
     elif input_str == "text":
         as_text = True
     catevent = await edit_or_reply(
-        event, "`Calculating my internet speed. Please wait!`"
+        event, "`Calculando a velocidade da minha internet. Por favor, espere!`"
     )
     start = datetime.now()
     s = speedtest.Speedtest()
@@ -47,7 +47,7 @@ async def _(event):
         speedtest_image = response
         if as_text:
             await catevent.edit(
-                """`SpeedTest completed in {} seconds`
+                """`SpeedTest completed in {} segundos`
 
 `Download: {}`
 `Upload: {}`

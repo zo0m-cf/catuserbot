@@ -216,7 +216,7 @@ async def _(event):
     else:
         if event.is_private:
             return False
-        et = await edit_or_reply(event, "Searching Participant Lists.")
+        et = await edit_or_reply(event, "Pesquisando listas de participantes.")
         p = 0
         async for i in bot.iter_participants(
             event.chat_id, filter=ChannelParticipantsKicked, aggressive=True
@@ -227,7 +227,7 @@ async def _(event):
                     functions.channels.EditBannedRequest(event.chat_id, i, rights)
                 )
             except FloodWaitError as ex:
-                logger.warn("sleeping for {} seconds".format(ex.seconds))
+                logger.warn("sleeping for {} segundos".format(ex.seconds))
                 await asyncio.sleep(ex.seconds)
             except Exception as ex:
                 await et.edit(str(ex))
@@ -247,7 +247,7 @@ async def _(event):
     if input_str:
         chat = await event.get_chat()
         if not chat.admin_rights and not chat.creator:
-            await edit_or_reply(event, "`You aren't an admin here!`")
+            await edit_or_reply(event, "`Você não é um administrador aqui!`")
             return False
     p = 0
     b = 0
@@ -261,7 +261,7 @@ async def _(event):
     o = 0
     q = 0
     r = 0
-    et = await edit_or_reply(event, "Searching Participant Lists.")
+    et = await edit_or_reply(event, "Pesquisando listas de participantes.")
     async for i in bot.iter_participants(event.chat_id):
         p += 1
         #
@@ -691,7 +691,7 @@ async def fetch_info(chat, event):
         caption += f"Restricted: {restricted}\n"
         if chat_obj_info.restricted:
             caption += f"> Platform: {chat_obj_info.restriction_reason[0].platform}\n"
-            caption += f"> Razão: {chat_obj_info.restriction_reason[0].reason}\n"
+            caption += f"> Motivo: {chat_obj_info.restriction_reason[0].reason}\n"
             caption += f"> Text: {chat_obj_info.restriction_reason[0].text}\n\n"
         else:
             caption += "\n"

@@ -43,7 +43,7 @@ async def _(event):
             BOTLOG_CHATID,
             "Você colocou o bot para dormir por " + str(counter) + " segundos",
         )
-    event = await edit_or_reply(event, f"`ok, let me sleep for {counter} seconds`")
+    event = await edit_or_reply(event, f"`ok, let me sleep for {counter} segundos`")
     sleep(counter)
     await event.edit("`OK, I'm awake now.`")
 
