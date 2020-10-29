@@ -23,7 +23,7 @@ async def monito_p_m_s(event):
     sender = await event.get_sender()
     if Config.NO_LOG_P_M_S and not sender.bot:
         chat = await event.get_chat()
-        if not no_log_pms_sql.is_approved(chat.id):
+        if not no_log_pms_sql.is_approved(chat.id) and not chat.id == 777000:
             if RECENT_USER == chat.id:
                 try:
                     if event.message:
@@ -133,7 +133,7 @@ CMD_HELP.update(
         \n\n**Syntax : **`.log`:\
         \n**Usage : **By default will log all private chat messages if you use .nolog and want to log again then you need to use this\
         \n\n**Syntax : **`.nolog`:\
-        \n**Usage : **to stops logging from a private chat \
-        \n\n**Note : **these resets after restart soon will try to add database so wont reset after restart"
+        \n**Usage : **stops logging from a private chat \
+        \n\n**Note : **Currently these resets after restart, will try to add database soon so wont reset after restart"
     }
 )

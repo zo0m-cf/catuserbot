@@ -6,6 +6,7 @@ import time
 import heroku3
 import requests
 import spamwatch as spam_watch
+from validators.url import url
 
 from .. import *
 from ..Config import Config
@@ -21,9 +22,14 @@ if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "thumb_image.jpg"
 
 # thumb image
-if Config.THUMB_IMAGE is not None:
-    with open(thumb_image_path, "wb") as f:
-        f.write(requests.get(Config.THUMB_IMAGE).content)
+if Config.THUMB_IMAGE != None:
+    check = url(Config.THUMB_IMAGE)
+    if check:
+        try:
+            with open(thumb_image_path, "wb") as f:
+                f.write(requests.get(Config.THUMB_IMAGE).content)
+        except:
+            pass
 
 cat_users = [bot.uid]
 if Config.SUDO_USERS:
@@ -35,7 +41,7 @@ def check(cat):
     if "/start" in cat:
         return True
     try:
-        hi = re.search(cat, "(a|b|c|d)", flags=re.IGNORECASE)
+        hi = re.search(cat.lower(), "(a|b|c|d)", flags=re.IGNORECASE)
     except:
         hi = False
     return bool(hi)

@@ -124,7 +124,7 @@ async def get_full_user(event):
 @bot.on(admin_cmd(pattern="whois(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="whois(?: |$)(.*)", allow_sudo=True))
 async def who(event):
-    cat = await edit_or_reply(event, "`Fetching userinfo wait `")
+    cat = await edit_or_reply(event, "`Fetching userinfo wait....`")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user(event)
@@ -218,7 +218,7 @@ async def fetch_info(replied_user, event):
     last_name = last_name.replace("\u2060", "") if last_name else (" ")
     username = "@{}".format(username) if username else ("This User has no Username")
     user_bio = "This User has no About" if not user_bio else user_bio
-    caption = "<b><i>USER INFO from druv's database :</i></b>\n\n"
+    caption = "<b><i>USER INFO from Durov's Database :</i></b>\n\n"
     caption += f"<b>👤 First Name:</b> {first_name} {last_name}\n"
     caption += f"<b>🤵 Username:</b> {username}\n"
     caption += f"<b>🔖 ID:</b> <code>{user_id}</code>\n"
@@ -295,11 +295,11 @@ async def ge(user, event):
 CMD_HELP.update(
     {
         "whois": "**Plugin : **`whois`\
-    \n\n**Syntax : **`.whois <username>` or reply to someones text with .whois\
-    \n**Function : ** Gets info of an user.\
-    \n\n**Syntax : **`.userinfo <username>` or reply to someones text with .userinfo\
-    \n**Function : ** Gets info of an user.\
-    \n\n**Syntax : **`.link` <text>\
-    \n**Function : ** Generates a link to the user's PM with a custom text."
+    \n\n**Syntax : **`.whois <username> or reply to someones text with .whois`\
+    \n**Function : **__Gets info of an user.__\
+    \n\n**Syntax : **`.userinfo <username> or reply to someones text with .userinfo`\
+    \n**Function : **__Gets information of an user such as restrictions ban by spamwatch or cas__\
+    \n\n**Syntax : **`.link id/username/reply`\
+    \n**Function : **__Generates a link to the user's PM .__"
     }
 )
