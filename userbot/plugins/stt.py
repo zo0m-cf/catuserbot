@@ -62,7 +62,7 @@ async def _(event):
                         lan, transcript_response, ms, transcript_confidence
                     )
                 else:
-                    string_to_show = "**Language : **`{}`\n**Time Taken : **`{} segundos`\n**No Results Found**".format(
+                    string_to_show = "**Language : **`{}`\n**Time Taken : **`{} segundos`\n**No Results Encontrado**".format(
                         lan, ms
                     )
                 await catevent.edit(string_to_show)

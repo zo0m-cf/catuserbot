@@ -87,7 +87,7 @@ if Config.ANTISPAMBOT_BAN:
             await event.client.send_message(
                 BOTLOG_CHATID,
                 "#ANTISPAMBOT\n"
-                f"**User :** [{user.first_name}](tg://user?id={user.id})\n"
+                f"**Usuário :** [{user.first_name}](tg://user?id={user.id})\n"
                 f"**Chat :** {event.chat.title} (`{event.chat_id}`)\n"
                 f"**Razão :** {hmm.text}",
             )
@@ -118,7 +118,7 @@ async def caschecker(cas):
                 else:
                     banned_users += f"Deleted Account `{user.id}`\n"
             members_count += 1
-        text = "**Warning!** Found `{}` of `{}` users are CAS Banned:\n".format(
+        text = "**Atenção!** Encontrado `{}` de `{}` usuários são CAS banidos:\n".format(
             cas_count, members_count
         )
         text += banned_users
@@ -158,12 +158,12 @@ async def caschecker(cas):
                 else:
                     banned_users += f"Deleted Account `{user.id}`\n"
             members_count += 1
-        text = "**Warning! **Found `{}` of `{}` users are spamwatch Banned:\n".format(
+        text = "**Atenção! **Encontrado `{}` de `{}` usuários são banidos no spamwatch:\n".format(
             cas_count, members_count
         )
         text += banned_users
         if not cas_count:
-            text = "No spamwatch Banned users found!"
+            text = "Nenhum usuário banido do spamwatch foi encontrado!"
     except ChatAdminRequiredError as carerr:
         await catevent.edit("`spamwatch check failed: Admin privileges are required`")
         return

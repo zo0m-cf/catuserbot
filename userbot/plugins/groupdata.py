@@ -394,7 +394,7 @@ async def rm_deletedacc(show):
                 del_u += 1
                 await sleep(0.5)
         if del_u > 0:
-            del_status = f"`Found` **{del_u}** ghost/deleted/zombie account(s) in this group,\
+            del_status = f"`Encontrado` **{del_u}** ghost/deleted/zombie account(s) in this group,\
             \nclean them by using `.zombies clean`"
         await event.edit(del_status)
         return
