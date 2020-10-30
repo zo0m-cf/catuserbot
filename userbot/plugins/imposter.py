@@ -52,7 +52,7 @@ async def _(event):
         f"**[{DEFAULTUSER}]({USERNAME}) :** É o {name} , Eu vi  {name}  entrar na ventilação,"
     )
     await asyncio.sleep(3)
-    await text4.edit(f"**Outros :** Ok.. Votem {name} ")
+    await text4.edit(f"**Outros :** Ok. Votem {name} ")
     await asyncio.sleep(2)
     await stcr3.delete()
     await text4.delete()
@@ -84,14 +84,14 @@ async def _(event):
     await stcr4.delete()
     if cmd == "":
         await catevent.edit(
-            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} Era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
+            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} Era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor restando    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
         await asyncio.sleep(4)
         await catevent.delete()
         await event.client.send_file(event.chat_id, "CAADAQADLQADnjOcH39IqwyR6Q_0Ag")
     elif cmd == "n":
         await catevent.edit(
-            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} Não era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
+            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ{name} Não era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor restando    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
         await asyncio.sleep(4)
         await catevent.delete()
@@ -127,11 +127,11 @@ async def _(event):
     await asyncio.sleep(0.2)
     if cmd == "":
         await catevent.edit(
-            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} Era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
+            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} Era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         0 Impostor restando    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
     elif cmd == "n":
         await catevent.edit(
-            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} Não era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor remains    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
+            f". 　　　。　　　　•　 　ﾟ　　。 　　.\n .　　　 　　.　　　　　。　　 。　. 　\n\n  . 　　 。   　     ඞ         。 . 　　 • 　　　　•\n\n  ﾟ {name} Não era um impostor.      。　. 　 　       。　.                                        。　. \n                                   　.          。　  　. \n　'         1 Impostor restando    　 。　.  　　.                。　.        。 　     .          。 　            .               .         .    ,      。\n　　ﾟ　　　.　　.    ,　 　。　 　. 　 .     。"
         )
 
 
@@ -139,8 +139,8 @@ CMD_HELP.update(
     {
         "imposter": "**Plugin :** `imposter__`\
 \n\n**Syntax : **`.imp` / `.impn` <text>\
-\n**Uso : ** Find imposter with stickers.\
+\n**Uso : ** Encontre um impostor com adesivos.\
 \n\n**Syntax : **`.timp` / `.timpn` <text>\
-\n**Uso : ** Find imposter only text."
+\n**Uso : ** Encontrar impostor, apenas texto."
     }
 )
