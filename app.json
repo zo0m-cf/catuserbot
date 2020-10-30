@@ -1,6 +1,6 @@
 {
   "name": "Catuserbot",
-  "description": "A telethon userbot based on snapdragon code(xtratgbot) .Easy to use and friendly bot . Maintained by Sandeep ",
+  "description": "Um userbot Telethon (xtratgbot). Fácil de usar e amigável. Mantido por Sandeep modificado por xmtscf ",
   "logo": "https://telegra.ph/file/3d60313110c58684b31ea.jpg",
   "keywords": [
     "telegram",
@@ -93,7 +93,7 @@
     },
     "UB_BLACK_LIST_CHAT": {
       "description": "set blacklist_chats where you do not want userbot features",
-      "value": "-1051754159",
+      "value": "",
       "required": false
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
@@ -103,7 +103,7 @@
     },
     "TZ": {
       "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
+      "value": "America/Sao_Paulo",
       "required": false
     }
   },
