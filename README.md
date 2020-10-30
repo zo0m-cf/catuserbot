@@ -2,7 +2,7 @@
 # CAT USERBOT
 
 ### A maneira fácil de implantar o bot
-Obtenha APP ID e API HASH de [AQUI] (https://my.telegram.org) e BOT TOKEN de [Bot Father] (https://t.me/botfather) e então gere stringsession clicando em run.on .repl.it abaixo e então clique em implantar no heroku. Antes de clicar em implantar no heroku, basta clicar no garfo e estrela logo abaixo
+Obtenha APP ID e API HASH de [AQUI] (https://my.telegram.org) e BOT TOKEN de [Bot Father] (https://t.me/botfather) e então gere stringsession clicando em run.on .repl.it (Não é necessário gerar uma nova string se você já utilizava o cat inglês) abaixo e então clique em implantar no heroku.
 
 [![Get string session](https://repl.it/badge/github/sandy1709/sandeep1709)](https://generatestringsession.sandeep1709.repl.run/)
 
